@@ -38,6 +38,7 @@
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(95, 70);
+            this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
 
         }

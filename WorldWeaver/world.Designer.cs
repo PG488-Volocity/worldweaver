@@ -50,6 +50,7 @@ namespace WorldWeaver
             this.Controls.Add(this.btnMainMenu);
             this.Name = "worldform";
             this.Text = "World Weaver";
+            this.Load += new System.EventHandler(this.worldform_Load);
             this.ResumeLayout(false);
 
         }
