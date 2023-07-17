@@ -78,5 +78,35 @@ namespace WorldWeaver
                 userControl11.Top = newTop;
             }
         }
+
+        private void diceRoller_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        private void btnRoll_Click(object sender, EventArgs e)
+        {
+            int sides = int.Parse(diceRoller.Text);
+            int result;
+
+            if (sides > 0)
+            {
+                Random random = new Random();
+                result = random.Next(1, sides + 1);
+            }
+            else
+            {
+                // invalid input handler
+                MessageBox.Show("Invalid number of sides. Please enter a positive integer.");
+                return;
+            }
+
+            // showes roll 
+            MessageBox.Show($"You rolled a {result}!");
+        }
+
+
     }
 }

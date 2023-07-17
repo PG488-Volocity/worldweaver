@@ -23,5 +23,10 @@ namespace WorldWeaver
             main_menu.Show();
             this.Hide();
         }
+
+        private void worldform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
