@@ -83,3 +83,6 @@ C:\Users\fahmi\source\repos\WorldWeaver\WorldWeaver\obj\Debug\WorldWeaver.UserCo
 C:\Users\kyle\Source\Repos\worldweaver1\WorldWeaver\obj\Debug\WorldWeaver.create_campaign.resources
 C:\Users\kyle\Source\Repos\worldweaver1\WorldWeaver\obj\Debug\WorldWeaver.grid_prototype.resources
 C:\Users\kyle\Source\Repos\worldweaver1\WorldWeaver\obj\Debug\WorldWeaver.UserControl1.resources
+C:\Users\Jose Aguayo-Castro\source\repos\worldweaver\WorldWeaver\obj\Debug\WorldWeaver.DM_info_sheet.resources
+C:\Users\Jose Aguayo-Castro\source\repos\worldweaver\WorldWeaver\obj\Debug\WorldWeaver.grid_prototype.resources
+C:\Users\Jose Aguayo-Castro\source\repos\worldweaver\WorldWeaver\obj\Debug\WorldWeaver.UserControl1.resources

@@ -22,7 +22,7 @@ namespace WorldWeaver
         {
             
 
-
+            //Rough draft of the DM info sheet. I want to make it a little more compact, but I'm not sure if it'll fit all of the info since it's one table with several columns
             
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
             connection.Open();
@@ -43,35 +43,75 @@ namespace WorldWeaver
 
         private void charaBtn_Click(object sender, EventArgs e)
         {
+            //Button to show character info
+
             SqlCommand command = new SqlCommand();
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
             connection.Open();
-            
             command.Connection = connection;
-            command.CommandText = "select * from player";
+            command.CommandText = "SELECT player_id, name, race, level, class FROM player;";
             SqlDataAdapter da = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-            
-
             connection.Close();
         }
 
         private void npcBtn_Click(object sender, EventArgs e)
         {
+            //Button to show NPC info.
+
             SqlCommand command = new SqlCommand();
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
             connection.Open();
-
             command.Connection = connection;
             command.CommandText = "select * from npc";
             SqlDataAdapter da = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView2.DataSource = dt;
+            connection.Close();
+        }
 
+        private void stsBtn_Click(object sender, EventArgs e)
+        {
+            //View stats
 
+            SqlCommand command = new SqlCommand();
+            SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
+            connection.Open();
+            command.Connection = connection;
+            command.CommandText = "SELECT player_id, hit_points, strength, dexterity, constitution, intelligence, wisdom, charisma, proficiency_bonus, walking_speed, initiative, armor_class FROM player;";
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView3.DataSource = dt;
+            connection.Close();
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void notesBtn_Click(object sender, EventArgs e)
+        {
+            //View notes
+
+            SqlCommand command = new SqlCommand();
+            SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
+            connection.Open();
+            command.Connection = connection;
+            command.CommandText = "SELECT player_id, name, notes_to_dm FROM player;";
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView4.DataSource = dt;
             connection.Close();
         }
     }
