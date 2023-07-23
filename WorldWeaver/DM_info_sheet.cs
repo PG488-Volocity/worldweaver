@@ -65,7 +65,7 @@ namespace WorldWeaver
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
             connection.Open();
             command.Connection = connection;
-            command.CommandText = "select * from npc";
+            command.CommandText = "SELECT * FROM npc;";
             SqlDataAdapter da = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             da.Fill(dt);

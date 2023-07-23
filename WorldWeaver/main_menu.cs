@@ -51,7 +51,7 @@ namespace WorldWeaver
 
         private void main_menu_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_createCampaign_Click(object sender, EventArgs e)
@@ -66,6 +66,25 @@ namespace WorldWeaver
             grid_prototype grid_Prototype = new grid_prototype();
             grid_Prototype.Show();
             this.Hide();
+        }
+
+        private void infoBtn_Click(object sender, EventArgs e)
+        {
+            DM_info_sheet dM_Info_sheet = new DM_info_sheet();
+            main_menu main_Menu = null; //new main_menu();
+
+            dM_Info_sheet.Shown += (s, args) =>
+            {
+                main_Menu = new main_menu();
+                main_Menu.Show();
+            };
+
+            dM_Info_sheet.FormClosing += (s, args) =>
+            {
+                main_Menu.Close();
+            };
+
+            dM_Info_sheet.ShowDialog(this);
         }
     }
 }
