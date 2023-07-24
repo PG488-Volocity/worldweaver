@@ -33,6 +33,9 @@
             this.userControl11 = new WorldWeaver.UserControl1();
             this.diceRoller = new System.Windows.Forms.TextBox();
             this.lblDR = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numTokens = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numTokens)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -97,11 +100,30 @@
             this.lblDR.TabIndex = 4;
             this.lblDR.Text = "dice roller";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "npc tokens ";
+            // 
+            // numTokens
+            // 
+            this.numTokens.Location = new System.Drawing.Point(12, 150);
+            this.numTokens.Name = "numTokens";
+            this.numTokens.Size = new System.Drawing.Size(76, 20);
+            this.numTokens.TabIndex = 6;
+            this.numTokens.ValueChanged += new System.EventHandler(this.numTokens_ValueChanged);
+            // 
             // grid_prototype
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 487);
+            this.Controls.Add(this.numTokens);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDR);
             this.Controls.Add(this.diceRoller);
             this.Controls.Add(this.btnRoll);
@@ -109,6 +131,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "grid_prototype";
             this.Text = "grid_prototype";
+            ((System.ComponentModel.ISupportInitialize)(this.numTokens)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,5 +144,7 @@
         private System.Windows.Forms.Button btnRoll;
         private System.Windows.Forms.TextBox diceRoller;
         private System.Windows.Forms.Label lblDR;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numTokens;
     }
 }
