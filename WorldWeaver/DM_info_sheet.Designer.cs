@@ -108,6 +108,7 @@
             this.initiativeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.armorclassDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notesBtn = new System.Windows.Forms.Button();
+            this.menubtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).BeginInit();
@@ -862,11 +863,22 @@
             this.notesBtn.UseVisualStyleBackColor = true;
             this.notesBtn.Click += new System.EventHandler(this.notesBtn_Click);
             // 
+            // menubtn
+            // 
+            this.menubtn.Location = new System.Drawing.Point(1551, 936);
+            this.menubtn.Name = "menubtn";
+            this.menubtn.Size = new System.Drawing.Size(119, 42);
+            this.menubtn.TabIndex = 8;
+            this.menubtn.Text = "Main Menu";
+            this.menubtn.UseVisualStyleBackColor = true;
+            this.menubtn.Click += new System.EventHandler(this.menubtn_Click);
+            // 
             // DM_info_sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1712, 1028);
+            this.ClientSize = new System.Drawing.Size(1747, 1028);
+            this.Controls.Add(this.menubtn);
             this.Controls.Add(this.notesBtn);
             this.Controls.Add(this.dataGridView4);
             this.Controls.Add(this.stsBtn);
@@ -971,5 +983,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn initiativeDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn armorclassDataGridViewTextBoxColumn3;
         private System.Windows.Forms.Button notesBtn;
+        private System.Windows.Forms.Button menubtn;
     }
 }

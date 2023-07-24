@@ -114,5 +114,12 @@ namespace WorldWeaver
             dataGridView4.DataSource = dt;
             connection.Close();
         }
+
+        private void menubtn_Click(object sender, EventArgs e)
+        {
+            main_menu main_Menu = new main_menu();
+            main_Menu.Show();
+            this.Hide();
+        }
     }
 }

@@ -70,21 +70,30 @@ namespace WorldWeaver
 
         private void infoBtn_Click(object sender, EventArgs e)
         {
-            DM_info_sheet dM_Info_sheet = new DM_info_sheet();
-            main_menu main_Menu = null; //new main_menu();
+            
 
+            DM_info_sheet dM_Info_sheet = new DM_info_sheet();
+            dM_Info_sheet.Show();
+
+            //Keeping the bottom code just in case, will erase after testing
+            //main_menu main_Menu = null; //new main_menu();
+
+            /*
             dM_Info_sheet.Shown += (s, args) =>
             {
-                main_Menu = new main_menu();
+                /*main_Menu = new main_menu();
                 main_Menu.Show();
             };
 
             dM_Info_sheet.FormClosing += (s, args) =>
             {
-                main_Menu.Close();
+                //main_Menu.Close();
             };
 
-            dM_Info_sheet.ShowDialog(this);
+            dM_Info_sheet.Show(this);
+            */
+
+
         }
     }
 }
