@@ -379,6 +379,28 @@ namespace WorldWeaver
         private void richTextBox5_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void btn_tokennav_Click(object sender, EventArgs e)
+        {
+            // Display a confirmation dialog
+            var result = MessageBox.Show("This will take you to create a new token, and you will lose any changes to this form. Continue?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            // Check the user's response
+            if (result == DialogResult.Yes)
+            {
+                // Close the current form (NPCForm)
+                this.Close();
+
+                // Open the upload_token form
+                upload_token uploadTokenForm = new upload_token();
+                uploadTokenForm.Show();
+            }
+            else if (result == DialogResult.No)
+            {
+                // User chose not to proceed, so do nothing and let them continue working on the current form (NPCForm)
+            }
+        }
+
     }
 }
 

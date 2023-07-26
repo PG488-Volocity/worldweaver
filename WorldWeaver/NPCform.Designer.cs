@@ -63,6 +63,7 @@ namespace WorldWeaver
             this.btnMain = new System.Windows.Forms.Button();
             this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_tokennav = new System.Windows.Forms.Button();
             this.groupBoxStats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,6 +107,7 @@ namespace WorldWeaver
             // 
             // groupBoxStats
             // 
+            this.groupBoxStats.Controls.Add(this.btn_tokennav);
             this.groupBoxStats.Controls.Add(this.label8);
             this.groupBoxStats.Controls.Add(this.cmb_tokenSelect);
             this.groupBoxStats.Controls.Add(this.txtbxRace);
@@ -130,7 +132,7 @@ namespace WorldWeaver
             this.groupBoxStats.Controls.Add(this.txtbxSTR);
             this.groupBoxStats.Location = new System.Drawing.Point(20, 52);
             this.groupBoxStats.Name = "groupBoxStats";
-            this.groupBoxStats.Size = new System.Drawing.Size(242, 224);
+            this.groupBoxStats.Size = new System.Drawing.Size(278, 258);
             this.groupBoxStats.TabIndex = 8;
             this.groupBoxStats.TabStop = false;
             this.groupBoxStats.Text = "NPC Stats";
@@ -387,6 +389,16 @@ namespace WorldWeaver
             this.label8.TabIndex = 20;
             this.label8.Text = "Token";
             // 
+            // btn_tokennav
+            // 
+            this.btn_tokennav.Location = new System.Drawing.Point(72, 217);
+            this.btn_tokennav.Name = "btn_tokennav";
+            this.btn_tokennav.Size = new System.Drawing.Size(117, 28);
+            this.btn_tokennav.TabIndex = 40;
+            this.btn_tokennav.Text = "Create New Token";
+            this.btn_tokennav.UseVisualStyleBackColor = true;
+            this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
+            // 
             // NPCForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,5 +462,6 @@ namespace WorldWeaver
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmb_tokenSelect;
+        private System.Windows.Forms.Button btn_tokennav;
     }
 }

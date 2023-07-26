@@ -64,6 +64,7 @@
             this.schara = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
+            this.btn_tokennav = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pname
@@ -239,7 +240,7 @@
             // raceBox
             // 
             this.raceBox.Location = new System.Drawing.Point(37, 192);
-            this.raceBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.raceBox.Margin = new System.Windows.Forms.Padding(2);
             this.raceBox.Name = "raceBox";
             this.raceBox.Size = new System.Drawing.Size(68, 20);
             this.raceBox.TabIndex = 18;
@@ -248,7 +249,7 @@
             // lvlBox
             // 
             this.lvlBox.Location = new System.Drawing.Point(37, 244);
-            this.lvlBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvlBox.Margin = new System.Windows.Forms.Padding(2);
             this.lvlBox.Name = "lvlBox";
             this.lvlBox.Size = new System.Drawing.Size(68, 20);
             this.lvlBox.TabIndex = 19;
@@ -258,7 +259,7 @@
             // clsBox
             // 
             this.clsBox.Location = new System.Drawing.Point(37, 307);
-            this.clsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clsBox.Margin = new System.Windows.Forms.Padding(2);
             this.clsBox.Name = "clsBox";
             this.clsBox.Size = new System.Drawing.Size(68, 20);
             this.clsBox.TabIndex = 20;
@@ -266,7 +267,7 @@
             // hpBox
             // 
             this.hpBox.Location = new System.Drawing.Point(37, 416);
-            this.hpBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hpBox.Margin = new System.Windows.Forms.Padding(2);
             this.hpBox.Name = "hpBox";
             this.hpBox.Size = new System.Drawing.Size(68, 20);
             this.hpBox.TabIndex = 21;
@@ -276,7 +277,7 @@
             // strBox
             // 
             this.strBox.Location = new System.Drawing.Point(37, 462);
-            this.strBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.strBox.Margin = new System.Windows.Forms.Padding(2);
             this.strBox.Name = "strBox";
             this.strBox.Size = new System.Drawing.Size(68, 20);
             this.strBox.TabIndex = 22;
@@ -286,7 +287,7 @@
             // dexBox
             // 
             this.dexBox.Location = new System.Drawing.Point(37, 508);
-            this.dexBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dexBox.Margin = new System.Windows.Forms.Padding(2);
             this.dexBox.Name = "dexBox";
             this.dexBox.Size = new System.Drawing.Size(68, 20);
             this.dexBox.TabIndex = 23;
@@ -296,7 +297,7 @@
             // conBox
             // 
             this.conBox.Location = new System.Drawing.Point(37, 556);
-            this.conBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.conBox.Margin = new System.Windows.Forms.Padding(2);
             this.conBox.Name = "conBox";
             this.conBox.Size = new System.Drawing.Size(68, 20);
             this.conBox.TabIndex = 24;
@@ -306,7 +307,7 @@
             // inteBox
             // 
             this.inteBox.Location = new System.Drawing.Point(37, 606);
-            this.inteBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inteBox.Margin = new System.Windows.Forms.Padding(2);
             this.inteBox.Name = "inteBox";
             this.inteBox.Size = new System.Drawing.Size(68, 20);
             this.inteBox.TabIndex = 25;
@@ -316,7 +317,7 @@
             // wisBox
             // 
             this.wisBox.Location = new System.Drawing.Point(37, 650);
-            this.wisBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wisBox.Margin = new System.Windows.Forms.Padding(2);
             this.wisBox.Name = "wisBox";
             this.wisBox.Size = new System.Drawing.Size(68, 20);
             this.wisBox.TabIndex = 26;
@@ -326,7 +327,7 @@
             // chaBox
             // 
             this.chaBox.Location = new System.Drawing.Point(293, 416);
-            this.chaBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chaBox.Margin = new System.Windows.Forms.Padding(2);
             this.chaBox.Name = "chaBox";
             this.chaBox.Size = new System.Drawing.Size(68, 20);
             this.chaBox.TabIndex = 27;
@@ -336,7 +337,7 @@
             // pbBox
             // 
             this.pbBox.Location = new System.Drawing.Point(293, 483);
-            this.pbBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbBox.Margin = new System.Windows.Forms.Padding(2);
             this.pbBox.Name = "pbBox";
             this.pbBox.Size = new System.Drawing.Size(68, 20);
             this.pbBox.TabIndex = 28;
@@ -346,7 +347,7 @@
             // wsBox
             // 
             this.wsBox.Location = new System.Drawing.Point(293, 550);
-            this.wsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wsBox.Margin = new System.Windows.Forms.Padding(2);
             this.wsBox.Name = "wsBox";
             this.wsBox.Size = new System.Drawing.Size(68, 20);
             this.wsBox.TabIndex = 29;
@@ -356,7 +357,7 @@
             // initBox
             // 
             this.initBox.Location = new System.Drawing.Point(293, 598);
-            this.initBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.initBox.Margin = new System.Windows.Forms.Padding(2);
             this.initBox.Name = "initBox";
             this.initBox.Size = new System.Drawing.Size(68, 20);
             this.initBox.TabIndex = 30;
@@ -366,7 +367,7 @@
             // acBox
             // 
             this.acBox.Location = new System.Drawing.Point(293, 650);
-            this.acBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.acBox.Margin = new System.Windows.Forms.Padding(2);
             this.acBox.Name = "acBox";
             this.acBox.Size = new System.Drawing.Size(68, 20);
             this.acBox.TabIndex = 31;
@@ -376,7 +377,7 @@
             // notesBox
             // 
             this.notesBox.Location = new System.Drawing.Point(293, 146);
-            this.notesBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.notesBox.Margin = new System.Windows.Forms.Padding(2);
             this.notesBox.Multiline = true;
             this.notesBox.Name = "notesBox";
             this.notesBox.Size = new System.Drawing.Size(291, 154);
@@ -385,7 +386,7 @@
             // pnameBox
             // 
             this.pnameBox.Location = new System.Drawing.Point(37, 135);
-            this.pnameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.pnameBox.Name = "pnameBox";
             this.pnameBox.Size = new System.Drawing.Size(68, 20);
             this.pnameBox.TabIndex = 35;
@@ -394,7 +395,7 @@
             // schara
             // 
             this.schara.Location = new System.Drawing.Point(413, 701);
-            this.schara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.schara.Margin = new System.Windows.Forms.Padding(2);
             this.schara.Name = "schara";
             this.schara.Size = new System.Drawing.Size(109, 23);
             this.schara.TabIndex = 36;
@@ -405,7 +406,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(290, 327);
+            this.label1.Location = new System.Drawing.Point(290, 324);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
@@ -416,10 +417,20 @@
             // 
             this.cmb_tokenSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tokenSelect.FormattingEnabled = true;
-            this.cmb_tokenSelect.Location = new System.Drawing.Point(293, 344);
+            this.cmb_tokenSelect.Location = new System.Drawing.Point(293, 341);
             this.cmb_tokenSelect.Name = "cmb_tokenSelect";
             this.cmb_tokenSelect.Size = new System.Drawing.Size(216, 28);
             this.cmb_tokenSelect.TabIndex = 38;
+            // 
+            // btn_tokennav
+            // 
+            this.btn_tokennav.Location = new System.Drawing.Point(515, 341);
+            this.btn_tokennav.Name = "btn_tokennav";
+            this.btn_tokennav.Size = new System.Drawing.Size(117, 28);
+            this.btn_tokennav.TabIndex = 39;
+            this.btn_tokennav.Text = "Create New Token";
+            this.btn_tokennav.UseVisualStyleBackColor = true;
+            this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
             // 
             // playercreation
             // 
@@ -427,6 +438,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(644, 690);
+            this.Controls.Add(this.btn_tokennav);
             this.Controls.Add(this.cmb_tokenSelect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.schara);
@@ -463,7 +475,7 @@
             this.Controls.Add(this.levelL);
             this.Controls.Add(this.raceLa);
             this.Controls.Add(this.pname);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "playercreation";
             this.Text = "playercreation";
             this.Load += new System.EventHandler(this.playercreation_Load);
@@ -510,5 +522,6 @@
         private System.Windows.Forms.Button schara;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_tokenSelect;
+        private System.Windows.Forms.Button btn_tokennav;
     }
 }
