@@ -36,6 +36,10 @@ CREATE TABLE player(
 	armor_class INT
 	);
 
+ALTER TABLE player
+ADD token_id INT;
+
+
 *********************************************
 table name: npc
 CREATE TABLE npc(
@@ -56,6 +60,10 @@ CREATE TABLE npc(
     abilities NVARCHAR(255),
     attacks NVARCHAR(255)
 );
+
+ALTER TABLE npc
+ADD token_id INT;
+
 
 *********************************************
 table name: tokens

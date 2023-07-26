@@ -34,10 +34,12 @@ namespace WorldWeaver
             this.label2 = new System.Windows.Forms.Label();
             this.btnSaveNPC = new System.Windows.Forms.Button();
             this.groupBoxStats = new System.Windows.Forms.GroupBox();
+            this.txtbxRace = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.npcnameBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtbxAC = new System.Windows.Forms.Label();
             this.textBxAC = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtbxHP = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtbxDEX = new System.Windows.Forms.Label();
@@ -59,8 +61,9 @@ namespace WorldWeaver
             this.rtbxCharacterNotes = new System.Windows.Forms.RichTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnMain = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtbxRace = new System.Windows.Forms.TextBox();
+            this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_tokennav = new System.Windows.Forms.Button();
             this.groupBoxStats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +107,9 @@ namespace WorldWeaver
             // 
             // groupBoxStats
             // 
+            this.groupBoxStats.Controls.Add(this.btn_tokennav);
+            this.groupBoxStats.Controls.Add(this.label8);
+            this.groupBoxStats.Controls.Add(this.cmb_tokenSelect);
             this.groupBoxStats.Controls.Add(this.txtbxRace);
             this.groupBoxStats.Controls.Add(this.label5);
             this.groupBoxStats.Controls.Add(this.npcnameBox);
@@ -126,11 +132,27 @@ namespace WorldWeaver
             this.groupBoxStats.Controls.Add(this.txtbxSTR);
             this.groupBoxStats.Location = new System.Drawing.Point(20, 52);
             this.groupBoxStats.Name = "groupBoxStats";
-            this.groupBoxStats.Size = new System.Drawing.Size(242, 198);
+            this.groupBoxStats.Size = new System.Drawing.Size(278, 258);
             this.groupBoxStats.TabIndex = 8;
             this.groupBoxStats.TabStop = false;
             this.groupBoxStats.Text = "NPC Stats";
             this.groupBoxStats.Enter += new System.EventHandler(this.groupBoxStats_Enter);
+            // 
+            // txtbxRace
+            // 
+            this.txtbxRace.Location = new System.Drawing.Point(72, 40);
+            this.txtbxRace.Name = "txtbxRace";
+            this.txtbxRace.Size = new System.Drawing.Size(62, 20);
+            this.txtbxRace.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 43);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Race";
             // 
             // npcnameBox
             // 
@@ -138,15 +160,6 @@ namespace WorldWeaver
             this.npcnameBox.Name = "npcnameBox";
             this.npcnameBox.Size = new System.Drawing.Size(62, 20);
             this.npcnameBox.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Name";
             // 
             // txtbxAC
             // 
@@ -164,6 +177,15 @@ namespace WorldWeaver
             this.textBxAC.Size = new System.Drawing.Size(27, 20);
             this.textBxAC.TabIndex = 14;
             this.textBxAC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Name";
             // 
             // txtbxHP
             // 
@@ -350,21 +372,32 @@ namespace WorldWeaver
             this.btnMain.UseVisualStyleBackColor = true;
             this.btnMain.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label5
+            // cmb_tokenSelect
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 43);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Race";
+            this.cmb_tokenSelect.FormattingEnabled = true;
+            this.cmb_tokenSelect.Location = new System.Drawing.Point(72, 190);
+            this.cmb_tokenSelect.Name = "cmb_tokenSelect";
+            this.cmb_tokenSelect.Size = new System.Drawing.Size(134, 21);
+            this.cmb_tokenSelect.TabIndex = 19;
             // 
-            // txtbxRace
+            // label8
             // 
-            this.txtbxRace.Location = new System.Drawing.Point(72, 40);
-            this.txtbxRace.Name = "txtbxRace";
-            this.txtbxRace.Size = new System.Drawing.Size(62, 20);
-            this.txtbxRace.TabIndex = 19;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(28, 193);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Token";
+            // 
+            // btn_tokennav
+            // 
+            this.btn_tokennav.Location = new System.Drawing.Point(72, 217);
+            this.btn_tokennav.Name = "btn_tokennav";
+            this.btn_tokennav.Size = new System.Drawing.Size(117, 28);
+            this.btn_tokennav.TabIndex = 40;
+            this.btn_tokennav.Text = "Create New Token";
+            this.btn_tokennav.UseVisualStyleBackColor = true;
+            this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
             // 
             // NPCForm
             // 
@@ -427,5 +460,8 @@ namespace WorldWeaver
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtbxRace;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmb_tokenSelect;
+        private System.Windows.Forms.Button btn_tokennav;
     }
 }
