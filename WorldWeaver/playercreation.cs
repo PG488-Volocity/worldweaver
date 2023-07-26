@@ -19,8 +19,6 @@ namespace WorldWeaver
         public playercreation()
         {
             InitializeComponent();
-
-            
         }
 
         private void ClearForm()
@@ -30,31 +28,57 @@ namespace WorldWeaver
 
         private void ClearControls(Control parentControl)
         {
-            foreach(Control control in parentControl.Controls)
+            foreach (Control control in parentControl.Controls)
             {
-                if(control is TextBox textBox)
+                if (control is TextBox textBox)
                 {
                     textBox.Text = string.Empty;
                 }
-
-                else if(control is RichTextBox richTextBox)
+                else if (control is RichTextBox richTextBox)
                 {
                     richTextBox.Clear();
                 }
-                
-                else if(control.HasChildren)
+                else if (control.HasChildren)
                 {
                     ClearControls(control);
                 }
             }
         }
 
+        private void playercreation_Load(object sender, EventArgs e)
+        {
+            // Populate the cmb_tokenSelect combo box with token names from the database
+            string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString"].ConnectionString;
+            string selectQuery = "SELECT token_name FROM tokens";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(selectQuery, conn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            cmb_tokenSelect.Items.Add(reader["token_name"].ToString());
+                        }
+                    }
+                }
+            }
+        }
 
         private void schara_Click(object sender, EventArgs e)
         {
 
+            if (cmb_tokenSelect.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a token for the player!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             //No error for notes as they are optional
-            if (string.IsNullOrEmpty(pnameBox.Text))
+            else if (string.IsNullOrEmpty(pnameBox.Text))
             {
                 MessageBox.Show("Please enter your name!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -139,7 +163,7 @@ namespace WorldWeaver
                 {
                     conn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO player (name, race, level, class, notes_to_dm, hit_points, strength, dexterity, constitution, intelligence, wisdom, charisma, proficiency_bonus, walking_speed, initiative, armor_class) VALUES(@playerName, @race, @level, @clas, @notes, @hp, @strength, @dexterity, @constitution, @intelligence, @wisdom, @charisma, @proficiencyBonus, @walkingSpeed, @initiative, @armorClass)", conn))
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO player (name, race, level, class, notes_to_dm, hit_points, strength, dexterity, constitution, intelligence, wisdom, charisma, proficiency_bonus, walking_speed, initiative, armor_class, token_id) VALUES (@playerName, @race, @level, @clas, @notes, @hp, @strength, @dexterity, @constitution, @intelligence, @wisdom, @charisma, @proficiencyBonus, @walkingSpeed, @initiative, @armorClass, @tokenId)", conn))
                     {
                         //Character info
                         cmd.Parameters.Add("@playerName", SqlDbType.NVarChar, 255).Value = pnameBox.Text;
@@ -161,12 +185,25 @@ namespace WorldWeaver
                         cmd.Parameters.Add("@initiative", SqlDbType.Int).Value = initBox.Text;
                         cmd.Parameters.Add("@armorClass", SqlDbType.Int).Value = acBox.Text;
 
+                        // Token ID - get the selected token name and find its corresponding ID in the tokens table
+                        int tokenId = 0;
+                        string selectedTokenName = cmb_tokenSelect.SelectedItem.ToString();
+                        string selectTokenQuery = "SELECT token_id FROM tokens WHERE token_name = @tokenName";
+
+                        using (SqlCommand tokenCmd = new SqlCommand(selectTokenQuery, conn))
+                        {
+                            tokenCmd.Parameters.Add("@tokenName", SqlDbType.NVarChar, 255).Value = selectedTokenName;
+                            var tokenResult = tokenCmd.ExecuteScalar();
+                            if (tokenResult != null)
+                            {
+                                tokenId = Convert.ToInt32(tokenResult);
+                            }
+                        }
+
+                        cmd.Parameters.Add("@tokenId", SqlDbType.Int).Value = tokenId;
+
                         cmd.ExecuteNonQuery();
                     }
-
-
-
-
                 }
                 var result = MessageBox.Show("Character saved! Create another?", "Success!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (result == DialogResult.Yes)
@@ -180,11 +217,6 @@ namespace WorldWeaver
                     this.Hide();
                 }
             }
-        }
-
-        private void playercreation_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void pnameBox_TextChanged(object sender, EventArgs e)
