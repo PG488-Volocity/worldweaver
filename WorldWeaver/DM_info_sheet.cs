@@ -13,6 +13,7 @@ namespace WorldWeaver
 {
     public partial class DM_info_sheet : Form
     {
+        private readonly string connectionString;
         public DM_info_sheet()
         {
             InitializeComponent();
@@ -22,8 +23,9 @@ namespace WorldWeaver
         {
             
 
+
             //Rough draft of the DM info sheet. I want to make it a little more compact, but I'm not sure if it'll fit all of the info since it's one table with several columns
-            
+
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CD77NKS;Initial Catalog=worldweaver;Integrated Security=True");
             connection.Open();
             
@@ -120,6 +122,31 @@ namespace WorldWeaver
             main_menu main_Menu = new main_menu();
             main_Menu.Show();
             this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT campaign_name FROM campaigns;";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        List<string> campaignNames = new List<string> { "---select campaign---" };
+
+                        while (reader.Read())
+                        {
+                            string campaignName = reader.GetString(0);
+                            campaignNames.Add(campaignName);
+                        }
+
+                        comboBox1.DataSource = campaignNames;
+                    }
+                }
+            }
         }
     }
 }

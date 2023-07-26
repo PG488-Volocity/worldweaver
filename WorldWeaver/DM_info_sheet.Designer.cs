@@ -30,6 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.playeridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.raceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.levelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notestodmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hitpointsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.strengthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dexterityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.constitutionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intelligenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wisdomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.charismaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proficiencybonusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walkingspeedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.initiativeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.armorclassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.worldweaverDataSet = new WorldWeaver.worldweaverDataSet();
             this.playerTableAdapter = new WorldWeaver.worldweaverDataSetTableAdapters.playerTableAdapter();
@@ -52,23 +69,6 @@
             this.npcTableAdapter = new WorldWeaver.worldweaverDataSetTableAdapters.npcTableAdapter();
             this.charaBtn = new System.Windows.Forms.Button();
             this.npcBtn = new System.Windows.Forms.Button();
-            this.playeridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.raceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.levelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.notestodmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hitpointsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.strengthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dexterityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.constitutionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intelligenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wisdomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.charismaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proficiencybonusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walkingspeedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.initiativeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.armorclassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.playeridDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,8 +87,8 @@
             this.walkingspeedDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.initiativeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.armorclassDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stsBtn = new System.Windows.Forms.Button();
             this.playerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.stsBtn = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.playeridDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +109,9 @@
             this.armorclassDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notesBtn = new System.Windows.Forms.Button();
             this.menubtn = new System.Windows.Forms.Button();
+            this.campaignsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.campaignsTableAdapter = new WorldWeaver.worldweaverDataSetTableAdapters.campaignsTableAdapter();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).BeginInit();
@@ -117,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.campaignsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -149,6 +153,155 @@
             this.dataGridView1.Size = new System.Drawing.Size(821, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // playeridDataGridViewTextBoxColumn
+            // 
+            this.playeridDataGridViewTextBoxColumn.DataPropertyName = "player_id";
+            this.playeridDataGridViewTextBoxColumn.HeaderText = "player_id";
+            this.playeridDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.playeridDataGridViewTextBoxColumn.Name = "playeridDataGridViewTextBoxColumn";
+            this.playeridDataGridViewTextBoxColumn.ReadOnly = true;
+            this.playeridDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // raceDataGridViewTextBoxColumn
+            // 
+            this.raceDataGridViewTextBoxColumn.DataPropertyName = "race";
+            this.raceDataGridViewTextBoxColumn.HeaderText = "race";
+            this.raceDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.raceDataGridViewTextBoxColumn.Name = "raceDataGridViewTextBoxColumn";
+            this.raceDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // levelDataGridViewTextBoxColumn
+            // 
+            this.levelDataGridViewTextBoxColumn.DataPropertyName = "level";
+            this.levelDataGridViewTextBoxColumn.HeaderText = "level";
+            this.levelDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.levelDataGridViewTextBoxColumn.Name = "levelDataGridViewTextBoxColumn";
+            this.levelDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // classDataGridViewTextBoxColumn
+            // 
+            this.classDataGridViewTextBoxColumn.DataPropertyName = "class";
+            this.classDataGridViewTextBoxColumn.HeaderText = "class";
+            this.classDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.classDataGridViewTextBoxColumn.Name = "classDataGridViewTextBoxColumn";
+            this.classDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // notestodmDataGridViewTextBoxColumn
+            // 
+            this.notestodmDataGridViewTextBoxColumn.DataPropertyName = "notes_to_dm";
+            this.notestodmDataGridViewTextBoxColumn.HeaderText = "notes_to_dm";
+            this.notestodmDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.notestodmDataGridViewTextBoxColumn.Name = "notestodmDataGridViewTextBoxColumn";
+            this.notestodmDataGridViewTextBoxColumn.Visible = false;
+            this.notestodmDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // hitpointsDataGridViewTextBoxColumn
+            // 
+            this.hitpointsDataGridViewTextBoxColumn.DataPropertyName = "hit_points";
+            this.hitpointsDataGridViewTextBoxColumn.HeaderText = "hit_points";
+            this.hitpointsDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.hitpointsDataGridViewTextBoxColumn.Name = "hitpointsDataGridViewTextBoxColumn";
+            this.hitpointsDataGridViewTextBoxColumn.Visible = false;
+            this.hitpointsDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // strengthDataGridViewTextBoxColumn
+            // 
+            this.strengthDataGridViewTextBoxColumn.DataPropertyName = "strength";
+            this.strengthDataGridViewTextBoxColumn.HeaderText = "strength";
+            this.strengthDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.strengthDataGridViewTextBoxColumn.Name = "strengthDataGridViewTextBoxColumn";
+            this.strengthDataGridViewTextBoxColumn.Visible = false;
+            this.strengthDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dexterityDataGridViewTextBoxColumn
+            // 
+            this.dexterityDataGridViewTextBoxColumn.DataPropertyName = "dexterity";
+            this.dexterityDataGridViewTextBoxColumn.HeaderText = "dexterity";
+            this.dexterityDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.dexterityDataGridViewTextBoxColumn.Name = "dexterityDataGridViewTextBoxColumn";
+            this.dexterityDataGridViewTextBoxColumn.Visible = false;
+            this.dexterityDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // constitutionDataGridViewTextBoxColumn
+            // 
+            this.constitutionDataGridViewTextBoxColumn.DataPropertyName = "constitution";
+            this.constitutionDataGridViewTextBoxColumn.HeaderText = "constitution";
+            this.constitutionDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.constitutionDataGridViewTextBoxColumn.Name = "constitutionDataGridViewTextBoxColumn";
+            this.constitutionDataGridViewTextBoxColumn.Visible = false;
+            this.constitutionDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // intelligenceDataGridViewTextBoxColumn
+            // 
+            this.intelligenceDataGridViewTextBoxColumn.DataPropertyName = "intelligence";
+            this.intelligenceDataGridViewTextBoxColumn.HeaderText = "intelligence";
+            this.intelligenceDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.intelligenceDataGridViewTextBoxColumn.Name = "intelligenceDataGridViewTextBoxColumn";
+            this.intelligenceDataGridViewTextBoxColumn.Visible = false;
+            this.intelligenceDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // wisdomDataGridViewTextBoxColumn
+            // 
+            this.wisdomDataGridViewTextBoxColumn.DataPropertyName = "wisdom";
+            this.wisdomDataGridViewTextBoxColumn.HeaderText = "wisdom";
+            this.wisdomDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.wisdomDataGridViewTextBoxColumn.Name = "wisdomDataGridViewTextBoxColumn";
+            this.wisdomDataGridViewTextBoxColumn.Visible = false;
+            this.wisdomDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // charismaDataGridViewTextBoxColumn
+            // 
+            this.charismaDataGridViewTextBoxColumn.DataPropertyName = "charisma";
+            this.charismaDataGridViewTextBoxColumn.HeaderText = "charisma";
+            this.charismaDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.charismaDataGridViewTextBoxColumn.Name = "charismaDataGridViewTextBoxColumn";
+            this.charismaDataGridViewTextBoxColumn.Visible = false;
+            this.charismaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // proficiencybonusDataGridViewTextBoxColumn
+            // 
+            this.proficiencybonusDataGridViewTextBoxColumn.DataPropertyName = "proficiency_bonus";
+            this.proficiencybonusDataGridViewTextBoxColumn.HeaderText = "proficiency_bonus";
+            this.proficiencybonusDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.proficiencybonusDataGridViewTextBoxColumn.Name = "proficiencybonusDataGridViewTextBoxColumn";
+            this.proficiencybonusDataGridViewTextBoxColumn.Visible = false;
+            this.proficiencybonusDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // walkingspeedDataGridViewTextBoxColumn
+            // 
+            this.walkingspeedDataGridViewTextBoxColumn.DataPropertyName = "walking_speed";
+            this.walkingspeedDataGridViewTextBoxColumn.HeaderText = "walking_speed";
+            this.walkingspeedDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.walkingspeedDataGridViewTextBoxColumn.Name = "walkingspeedDataGridViewTextBoxColumn";
+            this.walkingspeedDataGridViewTextBoxColumn.Visible = false;
+            this.walkingspeedDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // initiativeDataGridViewTextBoxColumn
+            // 
+            this.initiativeDataGridViewTextBoxColumn.DataPropertyName = "initiative";
+            this.initiativeDataGridViewTextBoxColumn.HeaderText = "initiative";
+            this.initiativeDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.initiativeDataGridViewTextBoxColumn.Name = "initiativeDataGridViewTextBoxColumn";
+            this.initiativeDataGridViewTextBoxColumn.Visible = false;
+            this.initiativeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // armorclassDataGridViewTextBoxColumn
+            // 
+            this.armorclassDataGridViewTextBoxColumn.DataPropertyName = "armor_class";
+            this.armorclassDataGridViewTextBoxColumn.HeaderText = "armor_class";
+            this.armorclassDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.armorclassDataGridViewTextBoxColumn.Name = "armorclassDataGridViewTextBoxColumn";
+            this.armorclassDataGridViewTextBoxColumn.Visible = false;
+            this.armorclassDataGridViewTextBoxColumn.Width = 150;
             // 
             // playerBindingSource
             // 
@@ -334,155 +487,6 @@
             this.npcBtn.UseVisualStyleBackColor = true;
             this.npcBtn.Click += new System.EventHandler(this.npcBtn_Click);
             // 
-            // playeridDataGridViewTextBoxColumn
-            // 
-            this.playeridDataGridViewTextBoxColumn.DataPropertyName = "player_id";
-            this.playeridDataGridViewTextBoxColumn.HeaderText = "player_id";
-            this.playeridDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.playeridDataGridViewTextBoxColumn.Name = "playeridDataGridViewTextBoxColumn";
-            this.playeridDataGridViewTextBoxColumn.ReadOnly = true;
-            this.playeridDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // raceDataGridViewTextBoxColumn
-            // 
-            this.raceDataGridViewTextBoxColumn.DataPropertyName = "race";
-            this.raceDataGridViewTextBoxColumn.HeaderText = "race";
-            this.raceDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.raceDataGridViewTextBoxColumn.Name = "raceDataGridViewTextBoxColumn";
-            this.raceDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // levelDataGridViewTextBoxColumn
-            // 
-            this.levelDataGridViewTextBoxColumn.DataPropertyName = "level";
-            this.levelDataGridViewTextBoxColumn.HeaderText = "level";
-            this.levelDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.levelDataGridViewTextBoxColumn.Name = "levelDataGridViewTextBoxColumn";
-            this.levelDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // classDataGridViewTextBoxColumn
-            // 
-            this.classDataGridViewTextBoxColumn.DataPropertyName = "class";
-            this.classDataGridViewTextBoxColumn.HeaderText = "class";
-            this.classDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.classDataGridViewTextBoxColumn.Name = "classDataGridViewTextBoxColumn";
-            this.classDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // notestodmDataGridViewTextBoxColumn
-            // 
-            this.notestodmDataGridViewTextBoxColumn.DataPropertyName = "notes_to_dm";
-            this.notestodmDataGridViewTextBoxColumn.HeaderText = "notes_to_dm";
-            this.notestodmDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.notestodmDataGridViewTextBoxColumn.Name = "notestodmDataGridViewTextBoxColumn";
-            this.notestodmDataGridViewTextBoxColumn.Visible = false;
-            this.notestodmDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // hitpointsDataGridViewTextBoxColumn
-            // 
-            this.hitpointsDataGridViewTextBoxColumn.DataPropertyName = "hit_points";
-            this.hitpointsDataGridViewTextBoxColumn.HeaderText = "hit_points";
-            this.hitpointsDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.hitpointsDataGridViewTextBoxColumn.Name = "hitpointsDataGridViewTextBoxColumn";
-            this.hitpointsDataGridViewTextBoxColumn.Visible = false;
-            this.hitpointsDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // strengthDataGridViewTextBoxColumn
-            // 
-            this.strengthDataGridViewTextBoxColumn.DataPropertyName = "strength";
-            this.strengthDataGridViewTextBoxColumn.HeaderText = "strength";
-            this.strengthDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.strengthDataGridViewTextBoxColumn.Name = "strengthDataGridViewTextBoxColumn";
-            this.strengthDataGridViewTextBoxColumn.Visible = false;
-            this.strengthDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // dexterityDataGridViewTextBoxColumn
-            // 
-            this.dexterityDataGridViewTextBoxColumn.DataPropertyName = "dexterity";
-            this.dexterityDataGridViewTextBoxColumn.HeaderText = "dexterity";
-            this.dexterityDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.dexterityDataGridViewTextBoxColumn.Name = "dexterityDataGridViewTextBoxColumn";
-            this.dexterityDataGridViewTextBoxColumn.Visible = false;
-            this.dexterityDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // constitutionDataGridViewTextBoxColumn
-            // 
-            this.constitutionDataGridViewTextBoxColumn.DataPropertyName = "constitution";
-            this.constitutionDataGridViewTextBoxColumn.HeaderText = "constitution";
-            this.constitutionDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.constitutionDataGridViewTextBoxColumn.Name = "constitutionDataGridViewTextBoxColumn";
-            this.constitutionDataGridViewTextBoxColumn.Visible = false;
-            this.constitutionDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // intelligenceDataGridViewTextBoxColumn
-            // 
-            this.intelligenceDataGridViewTextBoxColumn.DataPropertyName = "intelligence";
-            this.intelligenceDataGridViewTextBoxColumn.HeaderText = "intelligence";
-            this.intelligenceDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.intelligenceDataGridViewTextBoxColumn.Name = "intelligenceDataGridViewTextBoxColumn";
-            this.intelligenceDataGridViewTextBoxColumn.Visible = false;
-            this.intelligenceDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // wisdomDataGridViewTextBoxColumn
-            // 
-            this.wisdomDataGridViewTextBoxColumn.DataPropertyName = "wisdom";
-            this.wisdomDataGridViewTextBoxColumn.HeaderText = "wisdom";
-            this.wisdomDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.wisdomDataGridViewTextBoxColumn.Name = "wisdomDataGridViewTextBoxColumn";
-            this.wisdomDataGridViewTextBoxColumn.Visible = false;
-            this.wisdomDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // charismaDataGridViewTextBoxColumn
-            // 
-            this.charismaDataGridViewTextBoxColumn.DataPropertyName = "charisma";
-            this.charismaDataGridViewTextBoxColumn.HeaderText = "charisma";
-            this.charismaDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.charismaDataGridViewTextBoxColumn.Name = "charismaDataGridViewTextBoxColumn";
-            this.charismaDataGridViewTextBoxColumn.Visible = false;
-            this.charismaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // proficiencybonusDataGridViewTextBoxColumn
-            // 
-            this.proficiencybonusDataGridViewTextBoxColumn.DataPropertyName = "proficiency_bonus";
-            this.proficiencybonusDataGridViewTextBoxColumn.HeaderText = "proficiency_bonus";
-            this.proficiencybonusDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.proficiencybonusDataGridViewTextBoxColumn.Name = "proficiencybonusDataGridViewTextBoxColumn";
-            this.proficiencybonusDataGridViewTextBoxColumn.Visible = false;
-            this.proficiencybonusDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // walkingspeedDataGridViewTextBoxColumn
-            // 
-            this.walkingspeedDataGridViewTextBoxColumn.DataPropertyName = "walking_speed";
-            this.walkingspeedDataGridViewTextBoxColumn.HeaderText = "walking_speed";
-            this.walkingspeedDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.walkingspeedDataGridViewTextBoxColumn.Name = "walkingspeedDataGridViewTextBoxColumn";
-            this.walkingspeedDataGridViewTextBoxColumn.Visible = false;
-            this.walkingspeedDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // initiativeDataGridViewTextBoxColumn
-            // 
-            this.initiativeDataGridViewTextBoxColumn.DataPropertyName = "initiative";
-            this.initiativeDataGridViewTextBoxColumn.HeaderText = "initiative";
-            this.initiativeDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.initiativeDataGridViewTextBoxColumn.Name = "initiativeDataGridViewTextBoxColumn";
-            this.initiativeDataGridViewTextBoxColumn.Visible = false;
-            this.initiativeDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // armorclassDataGridViewTextBoxColumn
-            // 
-            this.armorclassDataGridViewTextBoxColumn.DataPropertyName = "armor_class";
-            this.armorclassDataGridViewTextBoxColumn.HeaderText = "armor_class";
-            this.armorclassDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.armorclassDataGridViewTextBoxColumn.Name = "armorclassDataGridViewTextBoxColumn";
-            this.armorclassDataGridViewTextBoxColumn.Visible = false;
-            this.armorclassDataGridViewTextBoxColumn.Width = 150;
-            // 
             // dataGridView3
             // 
             this.dataGridView3.AutoGenerateColumns = false;
@@ -656,6 +660,11 @@
             this.armorclassDataGridViewTextBoxColumn2.Name = "armorclassDataGridViewTextBoxColumn2";
             this.armorclassDataGridViewTextBoxColumn2.Width = 150;
             // 
+            // playerBindingSource1
+            // 
+            this.playerBindingSource1.DataMember = "player";
+            this.playerBindingSource1.DataSource = this.worldweaverDataSet;
+            // 
             // stsBtn
             // 
             this.stsBtn.Location = new System.Drawing.Point(75, 563);
@@ -665,11 +674,6 @@
             this.stsBtn.Text = "Character Stats";
             this.stsBtn.UseVisualStyleBackColor = true;
             this.stsBtn.Click += new System.EventHandler(this.stsBtn_Click);
-            // 
-            // playerBindingSource1
-            // 
-            this.playerBindingSource1.DataMember = "player";
-            this.playerBindingSource1.DataSource = this.worldweaverDataSet;
             // 
             // dataGridView4
             // 
@@ -873,11 +877,30 @@
             this.menubtn.UseVisualStyleBackColor = true;
             this.menubtn.Click += new System.EventHandler(this.menubtn_Click);
             // 
+            // campaignsBindingSource
+            // 
+            this.campaignsBindingSource.DataMember = "campaigns";
+            this.campaignsBindingSource.DataSource = this.worldweaverDataSet;
+            // 
+            // campaignsTableAdapter
+            // 
+            this.campaignsTableAdapter.ClearBeforeFill = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(1333, 563);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(249, 28);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // DM_info_sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1747, 1028);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menubtn);
             this.Controls.Add(this.notesBtn);
             this.Controls.Add(this.dataGridView4);
@@ -898,6 +921,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.campaignsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -984,5 +1008,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn armorclassDataGridViewTextBoxColumn3;
         private System.Windows.Forms.Button notesBtn;
         private System.Windows.Forms.Button menubtn;
+        private System.Windows.Forms.BindingSource campaignsBindingSource;
+        private worldweaverDataSetTableAdapters.campaignsTableAdapter campaignsTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

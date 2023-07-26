@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="choose_campaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose_campaign.Designer.cs">
+      <DependentUpon>choose_campaign.cs</DependentUpon>
+    </Compile>
     <Compile Include="create_campaign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>worldweaverDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="choose_campaign.resx">
+      <DependentUpon>choose_campaign.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="create_campaign.resx">
       <DependentUpon>create_campaign.cs</DependentUpon>
     </EmbeddedResource>

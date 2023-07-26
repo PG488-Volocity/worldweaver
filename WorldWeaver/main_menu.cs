@@ -71,9 +71,11 @@ namespace WorldWeaver
         private void infoBtn_Click(object sender, EventArgs e)
         {
             
-
-            DM_info_sheet dM_Info_sheet = new DM_info_sheet();
-            dM_Info_sheet.Show();
+            choose_campaign choose_Campaign = new choose_campaign();
+            choose_Campaign.Show();
+            
+            /*DM_info_sheet dM_Info_sheet = new DM_info_sheet();
+            dM_Info_sheet.Show();*/
 
             //Keeping the bottom code just in case, will erase after testing
             //main_menu main_Menu = null; //new main_menu();
