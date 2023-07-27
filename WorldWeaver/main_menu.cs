@@ -97,5 +97,13 @@ namespace WorldWeaver
 
 
         }
+
+        private void mikes_test_Click(object sender, EventArgs e)
+        {
+            CampaignPlayersForm campaignPlayersForm = new CampaignPlayersForm();
+            campaignPlayersForm.Show();
+            this.Hide();
+        }
+
     }
 }

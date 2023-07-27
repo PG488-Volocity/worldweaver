@@ -50,12 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CampaignPlayerManager.cs" />
+    <Compile Include="CampaignPlayersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CampaignPlayersForm.Designer.cs">
+      <DependentUpon>CampaignPlayersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="choose_campaign.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="choose_campaign.Designer.cs">
       <DependentUpon>choose_campaign.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class2.cs" />
     <Compile Include="create_campaign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +82,13 @@
     <Compile Include="grid_prototype.Designer.cs">
       <DependentUpon>grid_prototype.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenCampaignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenCampaignForm.Designer.cs">
+      <DependentUpon>OpenCampaignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +150,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>worldweaverDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CampaignPlayersForm.resx">
+      <DependentUpon>CampaignPlayersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="choose_campaign.resx">
       <DependentUpon>choose_campaign.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="map_upload.resx">
       <DependentUpon>map_upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenCampaignForm.resx">
+      <DependentUpon>OpenCampaignForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="playercreation.resx">
       <DependentUpon>playercreation.cs</DependentUpon>
