@@ -82,6 +82,8 @@
     <Compile Include="grid_prototype.Designer.cs">
       <DependentUpon>grid_prototype.cs</DependentUpon>
     </Compile>
+    <Compile Include="NPC.cs" />
+    <Compile Include="NPCManager.cs" />
     <Compile Include="OpenCampaignForm.cs">
       <SubType>Form</SubType>
     </Compile>
