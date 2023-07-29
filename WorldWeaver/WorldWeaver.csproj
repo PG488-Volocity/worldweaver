@@ -90,6 +90,12 @@
     <Compile Include="OpenCampaignForm.Designer.cs">
       <DependentUpon>OpenCampaignForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenSavedCampaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenSavedCampaign.Designer.cs">
+      <DependentUpon>OpenSavedCampaign.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
