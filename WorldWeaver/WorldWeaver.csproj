@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Campaign.cs" />
+    <Compile Include="CampaignManager.cs" />
     <Compile Include="CampaignPlayerManager.cs" />
     <Compile Include="CampaignPlayersForm.cs">
       <SubType>Form</SubType>
