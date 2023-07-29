@@ -22,7 +22,7 @@ namespace WorldWeaver
             listViewPlayers.Columns.Add("Level", 50);
             listViewPlayers.Columns.Add("Class", 50);
             listViewPlayers.Columns.Add("Notes", 200);
-            listViewPlayers.Columns.Add("Hit Pionts", 50);
+            listViewPlayers.Columns.Add("Hit Points", 50);
             listViewPlayers.Columns.Add("dexterity", 50);
             listViewPlayers.Columns.Add("Constitution", 50);
             listViewPlayers.Columns.Add("Intelligence", 50);
@@ -35,6 +35,9 @@ namespace WorldWeaver
 
             PopulateCampaignsComboBox();
         }
+
+        
+       
 
 
         private void PopulateCampaignsComboBox()
@@ -64,7 +67,7 @@ namespace WorldWeaver
         {
             if (cmbCampaigns.SelectedItem != null)
             {
-                MessageBox.Show(cmbCampaigns.SelectedItem.ToString(), "Selected Campaign ID");
+                MessageBox.Show(cmbCampaigns.SelectedItem.ToString(), "Selected Campaign Name");
             }
             else
             {
@@ -143,6 +146,21 @@ namespace WorldWeaver
             }
         }
 
+        private void listViewPlayers_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void CampaignPlayersForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        
     }
+
+        
+    
 }

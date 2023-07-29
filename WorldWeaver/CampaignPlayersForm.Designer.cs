@@ -41,9 +41,10 @@
             // cmbCampaigns
             // 
             this.cmbCampaigns.FormattingEnabled = true;
-            this.cmbCampaigns.Location = new System.Drawing.Point(186, 52);
+            this.cmbCampaigns.Location = new System.Drawing.Point(279, 80);
+            this.cmbCampaigns.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbCampaigns.Name = "cmbCampaigns";
-            this.cmbCampaigns.Size = new System.Drawing.Size(121, 21);
+            this.cmbCampaigns.Size = new System.Drawing.Size(180, 28);
             this.cmbCampaigns.TabIndex = 0;
             // 
             // worldweaverDataSetBindingSource
@@ -59,17 +60,20 @@
             // listViewPlayers
             // 
             this.listViewPlayers.HideSelection = false;
-            this.listViewPlayers.Location = new System.Drawing.Point(56, 131);
+            this.listViewPlayers.Location = new System.Drawing.Point(84, 182);
+            this.listViewPlayers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewPlayers.Name = "listViewPlayers";
-            this.listViewPlayers.Size = new System.Drawing.Size(1043, 292);
+            this.listViewPlayers.Size = new System.Drawing.Size(1562, 143);
             this.listViewPlayers.TabIndex = 3;
             this.listViewPlayers.UseCompatibleStateImageBehavior = false;
+            this.listViewPlayers.SelectedIndexChanged += new System.EventHandler(this.listViewPlayers_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(346, 52);
+            this.button1.Location = new System.Drawing.Point(519, 80);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 4;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,14 +81,16 @@
             // 
             // CampaignPlayersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1111, 450);
+            this.ClientSize = new System.Drawing.Size(1666, 1221);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listViewPlayers);
             this.Controls.Add(this.cmbCampaigns);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CampaignPlayersForm";
             this.Text = "CampaignPlayersForm";
+            this.Load += new System.EventHandler(this.CampaignPlayersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).EndInit();
             this.ResumeLayout(false);

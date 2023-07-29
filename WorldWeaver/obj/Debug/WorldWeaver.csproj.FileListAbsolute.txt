@@ -91,3 +91,6 @@ C:\Users\fahmi\source\repos\WorldWeaver\WorldWeaver\obj\Debug\WorldWeaver.DM_inf
 C:\Users\fahmi\source\repos\WorldWeaver\WorldWeaver\obj\Debug\WorldWeaver.choose_campaign.resources
 C:\Users\fahmi\source\repos\WorldWeaver\WorldWeaver\obj\Debug\WorldWeaver.OpenCampaignForm.resources
 C:\Users\fahmi\source\repos\WorldWeaver\WorldWeaver\obj\Debug\WorldWeaver.CampaignPlayersForm.resources
+C:\Users\Jose Aguayo-Castro\source\repos\worldweaver\WorldWeaver\obj\Debug\WorldWeaver.CampaignPlayersForm.resources
+C:\Users\Jose Aguayo-Castro\source\repos\worldweaver\WorldWeaver\obj\Debug\WorldWeaver.choose_campaign.resources
+C:\Users\Jose Aguayo-Castro\source\repos\worldweaver\WorldWeaver\obj\Debug\WorldWeaver.OpenCampaignForm.resources
