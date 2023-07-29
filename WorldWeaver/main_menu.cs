@@ -107,7 +107,7 @@ namespace WorldWeaver
 
         private void btnNavOpenCampaign_Click(object sender, EventArgs e)
         {
-            OpenSavedCampaign openSavedCampaign = new OpenSavedCampaign();
+            OpenCampaignForm openSavedCampaign = new OpenCampaignForm();
             openSavedCampaign.Show();
             this.Hide();
         }
