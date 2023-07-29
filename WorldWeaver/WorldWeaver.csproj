@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Campaign.cs" />
+    <Compile Include="CampaignManager.cs" />
     <Compile Include="CampaignPlayerManager.cs" />
     <Compile Include="CampaignPlayersForm.cs">
       <SubType>Form</SubType>
@@ -82,17 +84,19 @@
     <Compile Include="grid_prototype.Designer.cs">
       <DependentUpon>grid_prototype.cs</DependentUpon>
     </Compile>
-    <Compile Include="registration.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="registration.Designer.cs">
-      <DependentUpon>registration.cs</DependentUpon>
-    </Compile>
+    <Compile Include="NPC.cs" />
+    <Compile Include="NPCManager.cs" />
     <Compile Include="OpenCampaignForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OpenCampaignForm.Designer.cs">
       <DependentUpon>OpenCampaignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="openSavedCampaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openSavedCampaign.Designer.cs">
+      <DependentUpon>openSavedCampaign.cs</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="UserControl1.cs">
@@ -170,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="grid_prototype.resx">
       <DependentUpon>grid_prototype.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="registration.resx">
-      <DependentUpon>registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NPCform.resx">
       <DependentUpon>NPCform.cs</DependentUpon>

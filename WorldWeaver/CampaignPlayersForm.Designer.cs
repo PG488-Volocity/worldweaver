@@ -34,6 +34,7 @@
             this.worldweaverDataSet = new WorldWeaver.worldweaverDataSet();
             this.listViewPlayers = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
+            this.listViewNPCs = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).BeginInit();
             this.SuspendLayout();
@@ -41,10 +42,9 @@
             // cmbCampaigns
             // 
             this.cmbCampaigns.FormattingEnabled = true;
-            this.cmbCampaigns.Location = new System.Drawing.Point(279, 80);
-            this.cmbCampaigns.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbCampaigns.Location = new System.Drawing.Point(186, 52);
             this.cmbCampaigns.Name = "cmbCampaigns";
-            this.cmbCampaigns.Size = new System.Drawing.Size(180, 28);
+            this.cmbCampaigns.Size = new System.Drawing.Size(121, 21);
             this.cmbCampaigns.TabIndex = 0;
             // 
             // worldweaverDataSetBindingSource
@@ -60,37 +60,42 @@
             // listViewPlayers
             // 
             this.listViewPlayers.HideSelection = false;
-            this.listViewPlayers.Location = new System.Drawing.Point(84, 182);
-            this.listViewPlayers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listViewPlayers.Location = new System.Drawing.Point(56, 131);
             this.listViewPlayers.Name = "listViewPlayers";
-            this.listViewPlayers.Size = new System.Drawing.Size(1562, 143);
+            this.listViewPlayers.Size = new System.Drawing.Size(1043, 181);
             this.listViewPlayers.TabIndex = 3;
             this.listViewPlayers.UseCompatibleStateImageBehavior = false;
-            this.listViewPlayers.SelectedIndexChanged += new System.EventHandler(this.listViewPlayers_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(519, 80);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(346, 52);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // listViewNPCs
+            // 
+            this.listViewNPCs.HideSelection = false;
+            this.listViewNPCs.Location = new System.Drawing.Point(56, 337);
+            this.listViewNPCs.Name = "listViewNPCs";
+            this.listViewNPCs.Size = new System.Drawing.Size(1043, 198);
+            this.listViewNPCs.TabIndex = 5;
+            this.listViewNPCs.UseCompatibleStateImageBehavior = false;
+            // 
             // CampaignPlayersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1666, 1221);
+            this.ClientSize = new System.Drawing.Size(1111, 610);
+            this.Controls.Add(this.listViewNPCs);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listViewPlayers);
             this.Controls.Add(this.cmbCampaigns);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CampaignPlayersForm";
             this.Text = "CampaignPlayersForm";
-            this.Load += new System.EventHandler(this.CampaignPlayersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).EndInit();
             this.ResumeLayout(false);
@@ -104,5 +109,6 @@
         private worldweaverDataSet worldweaverDataSet;
         private System.Windows.Forms.ListView listViewPlayers;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView listViewNPCs;
     }
 }

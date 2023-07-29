@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
-using System.Text; // Add this namespace for StringBuilder
+using System.Text;
 
 namespace WorldWeaver
 {
     public partial class CampaignPlayersForm : Form
     {
         private CampaignPlayerManager campaignPlayerManager;
+        private NPCManager NPCManager;
 
         public CampaignPlayersForm()
         {
             InitializeComponent();
             campaignPlayerManager = new CampaignPlayerManager();
+            NPCManager = new NPCManager();
 
             listViewPlayers.View = View.Details;
             listViewPlayers.Columns.Add("Name", 150);
@@ -34,6 +36,52 @@ namespace WorldWeaver
             listViewPlayers.Columns.Add("Armor Class", 50);
 
             PopulateCampaignsComboBox();
+            
+            listViewNPCs.View = View.Details;
+            listViewNPCs.Columns.Add("Name", 150);
+            listViewNPCs.Columns.Add("Race", 50);
+            listViewNPCs.Columns.Add("Hit Points", 50);
+            listViewNPCs.Columns.Add("Strength", 50);
+            listViewNPCs.Columns.Add("Dexterity", 50);
+            listViewNPCs.Columns.Add("Constitution", 50);
+            listViewNPCs.Columns.Add("Wisdom", 50);
+            listViewNPCs.Columns.Add("Charisma", 50);
+            listViewNPCs.Columns.Add("Character Notes", 200);
+            listViewNPCs.Columns.Add("Skills", 150);
+            listViewNPCs.Columns.Add("Abilities", 150);
+            listViewNPCs.Columns.Add("Attacks", 150);
+
+            PopulateNPCListView();
+
+        }
+
+        private void PopulateNPCListView()
+        {
+            // Load all NPCs and display them in the ListView
+            List<NPC> npcs = NPCManager.GetAllNPCs();
+
+            // Clear existing data in the ListView
+            listViewNPCs.Items.Clear();
+
+            // Populate the ListView with NPCs' information
+            foreach (NPC npc in npcs)
+            {
+                ListViewItem item = new ListViewItem(npc.Name);
+                item.SubItems.Add(npc.Race);
+                item.SubItems.Add(npc.HitPoints.ToString());
+                item.SubItems.Add(npc.Strength.ToString());
+                item.SubItems.Add(npc.Dexterity.ToString());
+                item.SubItems.Add(npc.Constitution.ToString());
+                item.SubItems.Add(npc.Intelligence.ToString());
+                item.SubItems.Add(npc.Wisdom.ToString());
+                item.SubItems.Add(npc.Charisma.ToString());
+                item.SubItems.Add(npc.CharacterNotes.ToString());
+                item.SubItems.Add(npc.Skills.ToString());
+                item.SubItems.Add(npc.Abilities.ToString());
+                item.SubItems.Add(npc.Attacks.ToString());
+
+                listViewNPCs.Items.Add(item);
+            }
         }
 
         

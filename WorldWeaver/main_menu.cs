@@ -105,5 +105,11 @@ namespace WorldWeaver
             this.Hide();
         }
 
+        private void btnNavOpenCampaign_Click(object sender, EventArgs e)
+        {
+            OpenCampaignForm openSavedCampaign = new OpenCampaignForm();
+            openSavedCampaign.Show();
+            this.Hide();
+        }
     }
 }

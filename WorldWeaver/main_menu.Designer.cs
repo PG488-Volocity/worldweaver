@@ -37,11 +37,12 @@
             this.btn_navGridProto = new System.Windows.Forms.Button();
             this.infoBtn = new System.Windows.Forms.Button();
             this.mikes_test = new System.Windows.Forms.Button();
+            this.btnNavOpenCampaign = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_mapUpload
             // 
-            this.btn_mapUpload.Location = new System.Drawing.Point(495, 169);
+            this.btn_mapUpload.Location = new System.Drawing.Point(183, 182);
             this.btn_mapUpload.Name = "btn_mapUpload";
             this.btn_mapUpload.Size = new System.Drawing.Size(131, 50);
             this.btn_mapUpload.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             // btnLoadGame
             // 
-            this.btnLoadGame.Location = new System.Drawing.Point(173, 169);
+            this.btnLoadGame.Location = new System.Drawing.Point(344, 113);
             this.btnLoadGame.Name = "btnLoadGame";
             this.btnLoadGame.Size = new System.Drawing.Size(131, 50);
             this.btnLoadGame.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             // BtnNewGame
             // 
-            this.BtnNewGame.Location = new System.Drawing.Point(334, 169);
+            this.BtnNewGame.Location = new System.Drawing.Point(505, 113);
             this.BtnNewGame.Name = "BtnNewGame";
             this.BtnNewGame.Size = new System.Drawing.Size(131, 50);
             this.BtnNewGame.TabIndex = 2;
@@ -83,7 +84,7 @@
             // 
             // btn_navToken
             // 
-            this.btn_navToken.Location = new System.Drawing.Point(656, 169);
+            this.btn_navToken.Location = new System.Drawing.Point(344, 182);
             this.btn_navToken.Name = "btn_navToken";
             this.btn_navToken.Size = new System.Drawing.Size(131, 50);
             this.btn_navToken.TabIndex = 4;
@@ -93,7 +94,7 @@
             // 
             // btn_createCampaign
             // 
-            this.btn_createCampaign.Location = new System.Drawing.Point(12, 169);
+            this.btn_createCampaign.Location = new System.Drawing.Point(183, 113);
             this.btn_createCampaign.Name = "btn_createCampaign";
             this.btn_createCampaign.Size = new System.Drawing.Size(131, 50);
             this.btn_createCampaign.TabIndex = 5;
@@ -113,10 +114,10 @@
             // 
             // infoBtn
             // 
-            this.infoBtn.Location = new System.Drawing.Point(34, 376);
-            this.infoBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.infoBtn.Location = new System.Drawing.Point(147, 376);
+            this.infoBtn.Margin = new System.Windows.Forms.Padding(2);
             this.infoBtn.Name = "infoBtn";
-            this.infoBtn.Size = new System.Drawing.Size(116, 50);
+            this.infoBtn.Size = new System.Drawing.Size(131, 50);
             this.infoBtn.TabIndex = 7;
             this.infoBtn.Text = "DM Info Sheet";
             this.infoBtn.UseVisualStyleBackColor = true;
@@ -132,11 +133,22 @@
             this.mikes_test.UseVisualStyleBackColor = true;
             this.mikes_test.Click += new System.EventHandler(this.mikes_test_Click);
             // 
+            // btnNavOpenCampaign
+            // 
+            this.btnNavOpenCampaign.Location = new System.Drawing.Point(505, 182);
+            this.btnNavOpenCampaign.Name = "btnNavOpenCampaign";
+            this.btnNavOpenCampaign.Size = new System.Drawing.Size(131, 50);
+            this.btnNavOpenCampaign.TabIndex = 9;
+            this.btnNavOpenCampaign.Text = "Open Saved Campaign";
+            this.btnNavOpenCampaign.UseVisualStyleBackColor = true;
+            this.btnNavOpenCampaign.Click += new System.EventHandler(this.btnNavOpenCampaign_Click);
+            // 
             // main_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(937, 450);
+            this.Controls.Add(this.btnNavOpenCampaign);
             this.Controls.Add(this.mikes_test);
             this.Controls.Add(this.infoBtn);
             this.Controls.Add(this.btn_navGridProto);
@@ -165,5 +177,6 @@
         private System.Windows.Forms.Button btn_navGridProto;
         private System.Windows.Forms.Button infoBtn;
         private System.Windows.Forms.Button mikes_test;
+        private System.Windows.Forms.Button btnNavOpenCampaign;
     }
 }
