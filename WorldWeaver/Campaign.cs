@@ -13,7 +13,9 @@ namespace WorldWeaver.Models
         public string CampaignMap { get; set; }
         public int CampaignPlayerCount { get; set; }
 
-        // Add any other properties and methods related to the Campaign class
+        
+        public List<Player> Players { get; set; }
+
+       
     }
 }
-
