@@ -72,12 +72,6 @@
     <Compile Include="create_campaign.Designer.cs">
       <DependentUpon>create_campaign.cs</DependentUpon>
     </Compile>
-    <Compile Include="DM_info_sheet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DM_info_sheet.Designer.cs">
-      <DependentUpon>DM_info_sheet.cs</DependentUpon>
-    </Compile>
     <Compile Include="grid_prototype.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,9 +168,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="create_campaign.resx">
       <DependentUpon>create_campaign.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DM_info_sheet.resx">
-      <DependentUpon>DM_info_sheet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="grid_prototype.resx">
       <DependentUpon>grid_prototype.cs</DependentUpon>
