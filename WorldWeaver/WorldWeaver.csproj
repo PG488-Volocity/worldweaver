@@ -84,6 +84,12 @@
     <Compile Include="grid_prototype.Designer.cs">
       <DependentUpon>grid_prototype.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="NPC.cs" />
     <Compile Include="NPCManager.cs" />
     <Compile Include="OpenCampaignForm.cs">
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="grid_prototype.resx">
       <DependentUpon>grid_prototype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NPCform.resx">
       <DependentUpon>NPCform.cs</DependentUpon>

@@ -16,7 +16,7 @@ namespace WorldWeaver
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CampaignPlayersForm());
+            Application.Run(new Login());
         }
     }
 }
