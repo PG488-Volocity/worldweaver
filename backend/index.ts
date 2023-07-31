@@ -43,7 +43,7 @@ app.post("/register", async (req: Request, res: Response) => {
 
     const { username, password } = req.body;
     reqSql.query(
-      `SELECT * from registerUser.users where username='${username}'`,
+      `SELECT * from register.users where username='${username}'`,
       (error: any, data: any) => {
         if (error) {
           console.log(error);
@@ -51,7 +51,7 @@ app.post("/register", async (req: Request, res: Response) => {
           if (data.recordset.length > 0) {
             res.json({ status: 500, msg: "User is not available" });
           } else {
-            const sqlStatement = `INSERT INTO registerUser.users (username, passcode) VALUES ('${username}', '${password}')`;
+            const sqlStatement = `INSERT INTO register.users (username, passcode) VALUES ('${username}', '${password}')`;
             reqSql.query(sqlStatement, (error: any, results: any) => {
               if (error) {
                 console.error("Error registering user:", error);
@@ -86,7 +86,6 @@ app.post("/register", async (req: Request, res: Response) => {
       }
     );
   });
-  // Perform user registration logic
 });
 
 app.listen(port, () => {

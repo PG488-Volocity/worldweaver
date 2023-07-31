@@ -1,10 +1,10 @@
-create SCHEMA registerUser;
+create SCHEMA register;
 
-CREATE TABLE registerUser.users (
-    username varchar(20) NOT NULL Primary Key CHECK (username <> ''),
-    passcode varchar(20) Not Null CHECK (passcode <> ''));
+CREATE TABLE register.users (
+    username varchar(20) NOT NULL Primary Key,
+    passcode varchar(20) Not Null);
 
 
-    select * from registerUser.users;
+    select * from register.users;
 
   
