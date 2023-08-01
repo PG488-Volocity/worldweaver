@@ -68,8 +68,8 @@ namespace WorldWeaver
 
         private void nxtBtn_Click(object sender, EventArgs e)
         {
-            DM_info_sheet dM_Info_Sheet = new DM_info_sheet();
-            dM_Info_Sheet.Show();
+            CampaignPlayersForm campaignPlayers = new CampaignPlayersForm();
+            campaignPlayers.Show();
             this.Hide();
         }
     }

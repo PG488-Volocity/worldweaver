@@ -37,6 +37,8 @@ namespace WorldWeaver
                 MessageBox.Show("Please Enter a Password", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+
+
             if(passtxtBox.Text != string.Empty || usertxtBox.Text != string.Empty)
             {
                 //cmd = new SqlCommand("SELECT * FROM user WHERE username= '" + usertxtBox.Text + "' and password= '"+ passtxtBox +"'", connectionString)
@@ -62,8 +64,10 @@ namespace WorldWeaver
                             else
                             {
                                 reader.Close();
-                                MessageBox.Show("No account exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Please Check Username/Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
+
+                            
 
                             
                         }

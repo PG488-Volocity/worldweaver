@@ -11,6 +11,7 @@ namespace WorldWeaver
         public string Name { get; set; }
         public string Race { get; set; }
 
+        public string Class { get; set; }
         public string HitPoints { get; set; }
         public string Strength { get; set; }
         public string Dexterity { get; set; }

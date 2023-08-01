@@ -13,7 +13,7 @@ public class NPCManager
         List<NPC> npcs = new List<NPC>();
 
         string query = @"
-    SELECT name, race, hit_points, strength, dexterity, constitution, intelligence, wisdom, charisma, character_notes, skills, abilities, attacks
+    SELECT name, race, class, hit_points, strength, dexterity, constitution, intelligence, wisdom, charisma, character_notes, skills, abilities, attacks
     FROM npc";
 
         using (SqlConnection connection = new SqlConnection(connectionString))
@@ -30,6 +30,7 @@ public class NPCManager
                         {
                             Name = reader["name"].ToString(),
                             Race = reader["race"].ToString(),
+                            Class = reader["class"].ToString(),
                             HitPoints = reader["hit_points"].ToString(),
                             Strength = reader["strength"].ToString(),
                             Dexterity = reader["dexterity"].ToString(),
