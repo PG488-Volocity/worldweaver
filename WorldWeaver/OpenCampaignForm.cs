@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
@@ -18,6 +20,7 @@ namespace WorldWeaver
     public partial class OpenCampaignForm : Form
     {
         private CampaignManager campaignManager;
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString"].ConnectionString;
 
         public OpenCampaignForm()
         {
@@ -78,6 +81,10 @@ namespace WorldWeaver
                     // Step 3: Load the player tokens for the selected campaign and display them in the PictureBoxes
                     List<Player> players = campaignManager.GetPlayersForCampaign(selectedCampaign.CampaignId);
                     LoadPlayerTokens(players);
+
+                    // Step 4: Load the NPC tokens and display them in the PictureBoxes
+                    List<NPC> npcs = campaignManager.GetFirst12NPCs();
+                    LoadNPCTokens(npcs);
                 }
                 catch (Exception ex)
                 {
@@ -91,6 +98,65 @@ namespace WorldWeaver
                 MessageBox.Show("Please select a campaign to open.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void LoadNPCTokens(List<NPC> npcs)
+        {
+            // Clear existing NPC tokens in the PictureBoxes
+            ClearNPCTokens();
+
+            // Fetch and display the NPC tokens in the PictureBoxes
+            for (int i = 0; i < npcs.Count; i++)
+            {
+                PictureBox pictureBox = GetPictureBoxForNPC(i + 1);
+                if (pictureBox != null)
+                {
+                    int tokenId = npcs[i].TokenId;
+                    string tokenImagePath = campaignManager.GetTokenImagePath(tokenId);
+
+                    // Set the token information as the tooltip of the PictureBox
+                    pictureBox.Tag = $"Token ID: {tokenId}\nImage Path: {tokenImagePath}";
+
+                    if (!string.IsNullOrEmpty(tokenImagePath))
+                    {
+                        // Load the token image from file
+                        Image tokenImage = Image.FromFile(tokenImagePath);
+
+                        // Resize the image to fit within the PictureBox while maintaining aspect ratio
+                        pictureBox.Image = ResizeImage(tokenImage, 35, 35);
+                    }
+                    else
+                    {
+                        pictureBox.Image = null;
+                    }
+                }
+            }
+        }
+
+        private void ClearNPCTokens()
+        {
+            picbox_NPC1.Image = null;
+            picbox_NPC2.Image = null;
+            picbox_NPC3.Image = null;
+            picbox_NPC4.Image = null;
+            picbox_NPC5.Image = null;
+            picbox_NPC6.Image = null;
+            picbox_NPC7.Image = null;
+            picbox_NPC8.Image = null;
+            picbox_NPC9.Image = null;
+            picbox_NPC10.Image = null;
+            picbox_NPC11.Image = null;
+            picbox_NPC12.Image = null;
+        }
+
+        private PictureBox GetPictureBoxForNPC(int npcIndex)
+        {
+            string pictureBoxName = $"picbox_NPC{npcIndex}";
+            var pictureBox = Controls.Find(pictureBoxName, true).FirstOrDefault() as PictureBox;
+            return pictureBox;
+        }
+
+
+
 
         private void LoadPlayerTokens(List<Player> players)
         {
@@ -169,6 +235,8 @@ namespace WorldWeaver
             var pictureBox = Controls.Find(pictureBoxName, true).FirstOrDefault() as PictureBox;
             return pictureBox;
         }
+
+        
 
     }
 }
