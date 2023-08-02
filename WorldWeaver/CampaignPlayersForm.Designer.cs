@@ -35,7 +35,6 @@
             this.listViewPlayers = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
             this.listViewNPCs = new System.Windows.Forms.ListView();
-            this.npcBtn = new System.Windows.Forms.Button();
             this.mnmenuBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).BeginInit();
@@ -77,7 +76,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "Load Players";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -91,13 +90,6 @@
             this.listViewNPCs.TabIndex = 5;
             this.listViewNPCs.UseCompatibleStateImageBehavior = false;
             this.listViewNPCs.SelectedIndexChanged += new System.EventHandler(this.listViewNPCs_SelectedIndexChanged);
-            // 
-            // npcBtn
-            // 
-            this.npcBtn.Location = new System.Drawing.Point(0, 0);
-            this.npcBtn.Name = "npcBtn";
-            this.npcBtn.Size = new System.Drawing.Size(75, 23);
-            this.npcBtn.TabIndex = 0;
             // 
             // mnmenuBtn
             // 
@@ -115,7 +107,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1726, 1017);
             this.Controls.Add(this.mnmenuBtn);
-            this.Controls.Add(this.npcBtn);
             this.Controls.Add(this.listViewNPCs);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listViewPlayers);
@@ -137,7 +128,6 @@
         private System.Windows.Forms.ListView listViewPlayers;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListView listViewNPCs;
-        private System.Windows.Forms.Button npcBtn;
         private System.Windows.Forms.Button mnmenuBtn;
     }
 }
