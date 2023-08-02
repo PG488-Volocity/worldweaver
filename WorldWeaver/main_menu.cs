@@ -74,36 +74,12 @@ namespace WorldWeaver
             choose_campaign choose_Campaign = new choose_campaign();
             choose_Campaign.Show();
             
-            /*DM_info_sheet dM_Info_sheet = new DM_info_sheet();
-            dM_Info_sheet.Show();*/
-
-            //Keeping the bottom code just in case, will erase after testing
-            //main_menu main_Menu = null; //new main_menu();
-
-            /*
-            dM_Info_sheet.Shown += (s, args) =>
-            {
-                /*main_Menu = new main_menu();
-                main_Menu.Show();
-            };
-
-            dM_Info_sheet.FormClosing += (s, args) =>
-            {
-                //main_Menu.Close();
-            };
-
-            dM_Info_sheet.Show(this);
-            */
+            
 
 
         }
 
-        private void mikes_test_Click(object sender, EventArgs e)
-        {
-            CampaignPlayersForm campaignPlayersForm = new CampaignPlayersForm();
-            campaignPlayersForm.Show();
-            this.Hide();
-        }
+        
 
         private void btnNavOpenCampaign_Click(object sender, EventArgs e)
         {

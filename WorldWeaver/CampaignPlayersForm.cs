@@ -237,41 +237,18 @@ namespace WorldWeaver
             }
         }
 
-        private void npcBtn_Click(object sender, EventArgs e)
-        {
-
-            if (int.TryParse(cmbCampaigns.SelectedItem?.ToString(), out int npc_name))
-            {
-                // Load players for the selected campaign_id and display them in the ListView
-                List<NPC> npcs = NPCManager.GetAllNPCs();
-
-                // Clear existing data in the ListView
-                listViewNPCs.Items.Clear();
-
-                // Populate the ListView with players' information
-                foreach (NPC npc in npcs)
-                {
-                    ListViewItem item = new ListViewItem(npc.Name);
-                    item.SubItems.Add(npc.Race);
-                    item.SubItems.Add(npc.Strength.ToString());
-                    item.SubItems.Add(npc.Dexterity.ToString());
-                    item.SubItems.Add(npc.Constitution.ToString());
-                    item.SubItems.Add(npc.Intelligence.ToString());
-                    item.SubItems.Add(npc.Wisdom.ToString());
-                    item.SubItems.Add(npc.Charisma.ToString());
-                    item.SubItems.Add(npc.CharacterNotes.ToString());
-                    item.SubItems.Add(npc.Skills.ToString());
-                    item.SubItems.Add(npc.Abilities.ToString());
-                    item.SubItems.Add(npc.Attacks.ToString());
-
-                    listViewNPCs.Items.Add(item);
-                }
-            }
-        }
+        
 
         private void listViewNPCs_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnmenuBtn_Click(object sender, EventArgs e)
+        {
+            main_menu main_Menu = new main_menu();
+            main_Menu.Show();
+            this.Hide();
         }
     }
 

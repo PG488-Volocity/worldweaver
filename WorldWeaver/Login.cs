@@ -37,11 +37,11 @@ namespace WorldWeaver
                 MessageBox.Show("Please Enter a Password", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            
 
-
-            if(passtxtBox.Text != string.Empty || usertxtBox.Text != string.Empty)
+            if (passtxtBox.Text != string.Empty || usertxtBox.Text != string.Empty)
             {
-                //cmd = new SqlCommand("SELECT * FROM user WHERE username= '" + usertxtBox.Text + "' and password= '"+ passtxtBox +"'", connectionString)
+                
                 string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString"].ConnectionString;
                 string query = "SELECT * FROM users WHERE username='" + usertxtBox.Text + "' and password='" + passtxtBox.Text + "'";
 
@@ -69,19 +69,42 @@ namespace WorldWeaver
 
                             
 
-                            
+
+
+
                         }
                     }
                 }
             }
         }
 
+        
 
 
         private void Login_Load(object sender, EventArgs e)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString"].ConnectionString;
             
+        }
+
+        private void passtxtBox_TextChanged(object sender, EventArgs e)
+        {
+            passtxtBox.UseSystemPasswordChar = true;
+            passtxtBox.PasswordChar = '*';
+        }
+
+        private void haBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(passtxtBox.Text))
+            {
+                MessageBox.Show("Ha you thought you could gain access without credentials? Better luck next time!", "HA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            else if (string.IsNullOrEmpty(usertxtBox.Text))
+            {
+                MessageBox.Show("Ha you thought you could gain access without credentials? Better luck next time!", "HA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

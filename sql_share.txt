@@ -33,8 +33,11 @@ CREATE TABLE player(
 	proficiency_bonus INT,
 	walking_speed INT,
 	initiative INT,
-	armor_class INT
+	armor_class INT,
+	token_id INT
 	);
+
+or if table is already created
 
 ALTER TABLE player
 ADD token_id INT;
@@ -58,9 +61,12 @@ CREATE TABLE npc(
     character_notes NVARCHAR(255),
     skills NVARCHAR(255),
     abilities NVARCHAR(255),
-    attacks NVARCHAR(255)
+    attacks NVARCHAR(255),
+    token_id INT
+	
 );
 
+or if table is already created
 ALTER TABLE npc
 ADD token_id INT;
 
@@ -88,4 +94,13 @@ CREATE TABLE campaigns (
   campaign_player4 VARCHAR(255),
   campaign_player5 VARCHAR(255),
   campaign_player6 VARCHAR(255)
+);
+
+*******************************************
+Table name: users
+
+CREATE TABLE users(
+	user_id INT IDENTITY (1,1) PRIMARY KEY,
+	username NVARCHAR(255),
+	password NVARCHAR(255)
 );

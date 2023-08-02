@@ -33,6 +33,7 @@
             this.passtxtBox = new System.Windows.Forms.TextBox();
             this.usertxtBox = new System.Windows.Forms.TextBox();
             this.enterBtn = new System.Windows.Forms.Button();
+            this.haBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usrnmLabel
@@ -61,6 +62,7 @@
             this.passtxtBox.Name = "passtxtBox";
             this.passtxtBox.Size = new System.Drawing.Size(257, 26);
             this.passtxtBox.TabIndex = 2;
+            this.passtxtBox.TextChanged += new System.EventHandler(this.passtxtBox_TextChanged);
             // 
             // usertxtBox
             // 
@@ -79,11 +81,22 @@
             this.enterBtn.UseVisualStyleBackColor = true;
             this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
+            // haBtn
+            // 
+            this.haBtn.Location = new System.Drawing.Point(417, 504);
+            this.haBtn.Name = "haBtn";
+            this.haBtn.Size = new System.Drawing.Size(132, 43);
+            this.haBtn.TabIndex = 5;
+            this.haBtn.Text = "Main Menu";
+            this.haBtn.UseVisualStyleBackColor = true;
+            this.haBtn.Click += new System.EventHandler(this.haBtn_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 671);
+            this.Controls.Add(this.haBtn);
             this.Controls.Add(this.enterBtn);
             this.Controls.Add(this.usertxtBox);
             this.Controls.Add(this.passtxtBox);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.TextBox passtxtBox;
         private System.Windows.Forms.TextBox usertxtBox;
         private System.Windows.Forms.Button enterBtn;
+        private System.Windows.Forms.Button haBtn;
     }
 }
