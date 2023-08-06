@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1448, 708);
+            this.ClientSize = new System.Drawing.Size(1370, 708);
             this.Controls.Add(this.picbox_NPC12);
             this.Controls.Add(this.picbox_NPC11);
             this.Controls.Add(this.picbox_NPC10);
@@ -292,6 +292,7 @@
             this.Controls.Add(this.cmbCampaigns);
             this.Name = "OpenCampaignForm";
             this.Text = "OpenCampaignForm";
+            this.Load += new System.EventHandler(this.OpenCampaignForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxMap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxPlayer2)).EndInit();
