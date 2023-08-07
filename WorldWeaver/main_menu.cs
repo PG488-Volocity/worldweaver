@@ -71,8 +71,10 @@ namespace WorldWeaver
         private void infoBtn_Click(object sender, EventArgs e)
         {
             
-            choose_campaign choose_Campaign = new choose_campaign();
-            choose_Campaign.Show();
+            
+
+            CampaignPlayersForm campaignPlayers = new CampaignPlayersForm();
+            campaignPlayers.Show();
             
             
 
