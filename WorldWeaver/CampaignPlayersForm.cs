@@ -229,6 +229,11 @@ namespace WorldWeaver
             main_Menu.Show();
             this.Hide();
         }
+
+        private void CampaignPlayersForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
         
