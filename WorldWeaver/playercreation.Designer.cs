@@ -394,7 +394,7 @@
             // 
             // schara
             // 
-            this.schara.Location = new System.Drawing.Point(413, 701);
+            this.schara.Location = new System.Drawing.Point(431, 459);
             this.schara.Margin = new System.Windows.Forms.Padding(2);
             this.schara.Name = "schara";
             this.schara.Size = new System.Drawing.Size(109, 23);
@@ -437,7 +437,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(644, 690);
+            this.ClientSize = new System.Drawing.Size(644, 749);
             this.Controls.Add(this.btn_tokennav);
             this.Controls.Add(this.cmb_tokenSelect);
             this.Controls.Add(this.label1);

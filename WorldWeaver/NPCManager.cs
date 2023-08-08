@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using WorldWeaver;
+using WorldWeaver.Models;
 
 public class NPCManager
 {
@@ -31,13 +31,13 @@ public class NPCManager
                             Name = reader["name"].ToString(),
                             Race = reader["race"].ToString(),
                             Class = reader["class"].ToString(),
-                            HitPoints = reader["hit_points"].ToString(),
-                            Strength = reader["strength"].ToString(),
-                            Dexterity = reader["dexterity"].ToString(),
-                            Constitution = reader["constitution"].ToString(),
-                            Intelligence = reader["intelligence"].ToString(),
-                            Wisdom = reader["wisdom"].ToString(),
-                            Charisma = reader["charisma"].ToString(),
+                            HitPoints = SafeIntFromReader(reader, "hit_points"),
+                            Strength = SafeIntFromReader(reader, "strength"),
+                            Dexterity = SafeIntFromReader(reader, "dexterity"),
+                            Constitution = SafeIntFromReader(reader, "constitution"),
+                            Intelligence = SafeIntFromReader(reader, "intelligence"),
+                            Wisdom = SafeIntFromReader(reader, "wisdom"),
+                            Charisma = SafeIntFromReader(reader, "charisma"),
                             CharacterNotes = reader["character_notes"].ToString(),
                             Skills = reader["skills"].ToString(),
                             Abilities = reader["abilities"].ToString(),

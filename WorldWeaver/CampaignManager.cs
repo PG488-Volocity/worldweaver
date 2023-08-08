@@ -29,7 +29,54 @@ namespace WorldWeaver
             }
         }
 
+        public List<NPC> GetFirst12NPCs()
+        {
+            List<NPC> npcs = new List<NPC>();
 
+            // Write your SQL query to fetch the first 12 NPCs from the NPCs table
+            string query = "SELECT TOP 12 npc_id, name, race, class, hit_points, strength, dexterity, " +
+                           "constitution, intelligence, wisdom, charisma, armor_class, character_notes, " +
+                           "skills, abilities, attacks, token_id FROM npc";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            NPC npc = new NPC
+                            {
+                                NPCId = Convert.ToInt32(reader["npc_id"]),
+                                Name = reader["name"].ToString(),
+                                Race = reader["race"].ToString(),
+                                Class = reader["class"].ToString(),
+                                HitPoints = Convert.ToInt32(reader["hit_points"]),
+                                Strength = Convert.ToInt32(reader["strength"]),
+                                Dexterity = Convert.ToInt32(reader["dexterity"]),
+                                Constitution = Convert.ToInt32(reader["constitution"]),
+                                Intelligence = Convert.ToInt32(reader["intelligence"]),
+                                Wisdom = Convert.ToInt32(reader["wisdom"]),
+                                Charisma = Convert.ToInt32(reader["charisma"]),
+                                ArmorClass = Convert.ToInt32(reader["armor_class"]),
+                                CharacterNotes = reader["character_notes"].ToString(),
+                                Skills = reader["skills"].ToString(),
+                                Abilities = reader["abilities"].ToString(),
+                                Attacks = reader["attacks"].ToString(),
+                                TokenId = Convert.ToInt32(reader["token_id"])
+                            };
+
+                            npcs.Add(npc);
+                        }
+                    }
+                }
+            }
+
+            return npcs;
+        }
         public string GetTokenImagePath(int tokenId)
         {
             // Write your SQL query to fetch the token image path from the tokens table based on the token ID
