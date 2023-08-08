@@ -234,6 +234,15 @@ namespace WorldWeaver
         {
 
         }
+
+        private void btnMain_Click(object sender, EventArgs e)
+        {
+            {
+                main_menu main_menu = new main_menu();
+                main_menu.Show();
+                this.Hide();
+            }
+        }
     }
 
         

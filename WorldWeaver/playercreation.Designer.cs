@@ -65,6 +65,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
             this.btn_tokennav = new System.Windows.Forms.Button();
+            this.btnMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pname
@@ -394,7 +395,7 @@
             // 
             // schara
             // 
-            this.schara.Location = new System.Drawing.Point(431, 459);
+            this.schara.Location = new System.Drawing.Point(424, 596);
             this.schara.Margin = new System.Windows.Forms.Padding(2);
             this.schara.Name = "schara";
             this.schara.Size = new System.Drawing.Size(109, 23);
@@ -432,12 +433,23 @@
             this.btn_tokennav.UseVisualStyleBackColor = true;
             this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
             // 
+            // btnMain
+            // 
+            this.btnMain.Location = new System.Drawing.Point(443, 650);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(75, 23);
+            this.btnMain.TabIndex = 40;
+            this.btnMain.Text = "Main Menu";
+            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
+            // 
             // playercreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(644, 749);
+            this.Controls.Add(this.btnMain);
             this.Controls.Add(this.btn_tokennav);
             this.Controls.Add(this.cmb_tokenSelect);
             this.Controls.Add(this.label1);
@@ -523,5 +535,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_tokenSelect;
         private System.Windows.Forms.Button btn_tokennav;
+        private System.Windows.Forms.Button btnMain;
     }
 }
