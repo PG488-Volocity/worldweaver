@@ -65,10 +65,9 @@
             // 
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(339, 35);
-            this.lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_title.Location = new System.Drawing.Point(226, 23);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(500, 52);
+            this.lbl_title.Size = new System.Drawing.Size(333, 33);
             this.lbl_title.TabIndex = 0;
             this.lbl_title.Text = "Create a New Campaign";
             // 
@@ -76,128 +75,128 @@
             // 
             this.lbl_campaignName.AutoSize = true;
             this.lbl_campaignName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_campaignName.Location = new System.Drawing.Point(56, 118);
-            this.lbl_campaignName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_campaignName.Location = new System.Drawing.Point(37, 77);
             this.lbl_campaignName.Name = "lbl_campaignName";
-            this.lbl_campaignName.Size = new System.Drawing.Size(242, 33);
+            this.lbl_campaignName.Size = new System.Drawing.Size(157, 24);
             this.lbl_campaignName.TabIndex = 1;
             this.lbl_campaignName.Text = "Campaign Name:";
             // 
             // txt_CampaignName
             // 
+            this.txt_CampaignName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txt_CampaignName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CampaignName.Location = new System.Drawing.Point(302, 115);
-            this.txt_CampaignName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_CampaignName.Location = new System.Drawing.Point(201, 75);
             this.txt_CampaignName.Name = "txt_CampaignName";
-            this.txt_CampaignName.Size = new System.Drawing.Size(535, 40);
+            this.txt_CampaignName.Size = new System.Drawing.Size(358, 29);
             this.txt_CampaignName.TabIndex = 2;
             // 
             // lbl_map
             // 
             this.lbl_map.AutoSize = true;
             this.lbl_map.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_map.Location = new System.Drawing.Point(213, 202);
-            this.lbl_map.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_map.Location = new System.Drawing.Point(142, 131);
             this.lbl_map.Name = "lbl_map";
-            this.lbl_map.Size = new System.Drawing.Size(79, 33);
+            this.lbl_map.Size = new System.Drawing.Size(52, 24);
             this.lbl_map.TabIndex = 3;
             this.lbl_map.Text = "Map:";
             // 
             // cmbMaps
             // 
+            this.cmbMaps.AllowDrop = true;
+            this.cmbMaps.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmbMaps.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cmbMaps.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbMaps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaps.FormattingEnabled = true;
-            this.cmbMaps.Location = new System.Drawing.Point(302, 195);
-            this.cmbMaps.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbMaps.Location = new System.Drawing.Point(201, 127);
             this.cmbMaps.Name = "cmbMaps";
-            this.cmbMaps.Size = new System.Drawing.Size(304, 41);
+            this.cmbMaps.Size = new System.Drawing.Size(204, 32);
             this.cmbMaps.TabIndex = 4;
             this.cmbMaps.SelectedIndexChanged += new System.EventHandler(this.cmbMaps_SelectedIndexChanged_1);
             // 
             // cmbPlayerCount
             // 
+            this.cmbPlayerCount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmbPlayerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlayerCount.FormattingEnabled = true;
-            this.cmbPlayerCount.Location = new System.Drawing.Point(302, 285);
-            this.cmbPlayerCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbPlayerCount.Location = new System.Drawing.Point(201, 185);
             this.cmbPlayerCount.Name = "cmbPlayerCount";
-            this.cmbPlayerCount.Size = new System.Drawing.Size(180, 41);
+            this.cmbPlayerCount.Size = new System.Drawing.Size(121, 32);
             this.cmbPlayerCount.TabIndex = 5;
             // 
             // lbl_playerCount
             // 
             this.lbl_playerCount.AutoSize = true;
             this.lbl_playerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_playerCount.Location = new System.Drawing.Point(27, 291);
-            this.lbl_playerCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_playerCount.Location = new System.Drawing.Point(18, 189);
             this.lbl_playerCount.Name = "lbl_playerCount";
-            this.lbl_playerCount.Size = new System.Drawing.Size(274, 33);
+            this.lbl_playerCount.Size = new System.Drawing.Size(176, 24);
             this.lbl_playerCount.TabIndex = 6;
             this.lbl_playerCount.Text = "How Many Players?";
             // 
             // cmb_player1
             // 
+            this.cmb_player1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_player1.FormattingEnabled = true;
-            this.cmb_player1.Location = new System.Drawing.Point(182, 374);
-            this.cmb_player1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_player1.Location = new System.Drawing.Point(121, 243);
             this.cmb_player1.Name = "cmb_player1";
-            this.cmb_player1.Size = new System.Drawing.Size(180, 41);
+            this.cmb_player1.Size = new System.Drawing.Size(121, 32);
             this.cmb_player1.TabIndex = 7;
             this.cmb_player1.Text = "Select";
             // 
             // cmb_player2
             // 
+            this.cmb_player2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_player2.FormattingEnabled = true;
-            this.cmb_player2.Location = new System.Drawing.Point(525, 374);
-            this.cmb_player2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_player2.Location = new System.Drawing.Point(350, 243);
             this.cmb_player2.Name = "cmb_player2";
-            this.cmb_player2.Size = new System.Drawing.Size(180, 41);
+            this.cmb_player2.Size = new System.Drawing.Size(121, 32);
             this.cmb_player2.TabIndex = 8;
             this.cmb_player2.Text = "Select";
             // 
             // cmb_player3
             // 
+            this.cmb_player3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_player3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_player3.FormattingEnabled = true;
-            this.cmb_player3.Location = new System.Drawing.Point(862, 374);
-            this.cmb_player3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_player3.Location = new System.Drawing.Point(575, 243);
             this.cmb_player3.Name = "cmb_player3";
-            this.cmb_player3.Size = new System.Drawing.Size(180, 41);
+            this.cmb_player3.Size = new System.Drawing.Size(121, 32);
             this.cmb_player3.TabIndex = 9;
             this.cmb_player3.Text = "Select";
             // 
             // cmb_player4
             // 
+            this.cmb_player4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_player4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_player4.FormattingEnabled = true;
-            this.cmb_player4.Location = new System.Drawing.Point(180, 454);
-            this.cmb_player4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_player4.Location = new System.Drawing.Point(120, 295);
             this.cmb_player4.Name = "cmb_player4";
-            this.cmb_player4.Size = new System.Drawing.Size(180, 41);
+            this.cmb_player4.Size = new System.Drawing.Size(121, 32);
             this.cmb_player4.TabIndex = 10;
             this.cmb_player4.Text = "Select";
             // 
             // cmb_player5
             // 
+            this.cmb_player5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_player5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_player5.FormattingEnabled = true;
-            this.cmb_player5.Location = new System.Drawing.Point(525, 454);
-            this.cmb_player5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_player5.Location = new System.Drawing.Point(350, 295);
             this.cmb_player5.Name = "cmb_player5";
-            this.cmb_player5.Size = new System.Drawing.Size(180, 41);
+            this.cmb_player5.Size = new System.Drawing.Size(121, 32);
             this.cmb_player5.TabIndex = 11;
             this.cmb_player5.Text = "Select";
             // 
             // cmb_player6
             // 
+            this.cmb_player6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_player6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_player6.FormattingEnabled = true;
-            this.cmb_player6.Location = new System.Drawing.Point(862, 454);
-            this.cmb_player6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_player6.Location = new System.Drawing.Point(575, 295);
             this.cmb_player6.Name = "cmb_player6";
-            this.cmb_player6.Size = new System.Drawing.Size(180, 41);
+            this.cmb_player6.Size = new System.Drawing.Size(121, 32);
             this.cmb_player6.TabIndex = 12;
             this.cmb_player6.Text = "Select";
             // 
@@ -205,10 +204,9 @@
             // 
             this.lbl_player1.AutoSize = true;
             this.lbl_player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player1.Location = new System.Drawing.Point(56, 380);
-            this.lbl_player1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_player1.Location = new System.Drawing.Point(37, 247);
             this.lbl_player1.Name = "lbl_player1";
-            this.lbl_player1.Size = new System.Drawing.Size(122, 33);
+            this.lbl_player1.Size = new System.Drawing.Size(77, 24);
             this.lbl_player1.TabIndex = 13;
             this.lbl_player1.Text = "Player 1";
             // 
@@ -216,10 +214,9 @@
             // 
             this.lbl_player2.AutoSize = true;
             this.lbl_player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player2.Location = new System.Drawing.Point(400, 380);
-            this.lbl_player2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_player2.Location = new System.Drawing.Point(267, 247);
             this.lbl_player2.Name = "lbl_player2";
-            this.lbl_player2.Size = new System.Drawing.Size(122, 33);
+            this.lbl_player2.Size = new System.Drawing.Size(77, 24);
             this.lbl_player2.TabIndex = 14;
             this.lbl_player2.Text = "Player 2";
             // 
@@ -227,10 +224,9 @@
             // 
             this.lbl_player3.AutoSize = true;
             this.lbl_player3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player3.Location = new System.Drawing.Point(738, 380);
-            this.lbl_player3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_player3.Location = new System.Drawing.Point(492, 247);
             this.lbl_player3.Name = "lbl_player3";
-            this.lbl_player3.Size = new System.Drawing.Size(122, 33);
+            this.lbl_player3.Size = new System.Drawing.Size(77, 24);
             this.lbl_player3.TabIndex = 15;
             this.lbl_player3.Text = "Player 3";
             // 
@@ -238,10 +234,9 @@
             // 
             this.lbl_player4.AutoSize = true;
             this.lbl_player4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player4.Location = new System.Drawing.Point(56, 460);
-            this.lbl_player4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_player4.Location = new System.Drawing.Point(37, 299);
             this.lbl_player4.Name = "lbl_player4";
-            this.lbl_player4.Size = new System.Drawing.Size(122, 33);
+            this.lbl_player4.Size = new System.Drawing.Size(77, 24);
             this.lbl_player4.TabIndex = 16;
             this.lbl_player4.Text = "Player 4";
             // 
@@ -249,10 +244,9 @@
             // 
             this.lbl_player5.AutoSize = true;
             this.lbl_player5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player5.Location = new System.Drawing.Point(400, 460);
-            this.lbl_player5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_player5.Location = new System.Drawing.Point(267, 299);
             this.lbl_player5.Name = "lbl_player5";
-            this.lbl_player5.Size = new System.Drawing.Size(122, 33);
+            this.lbl_player5.Size = new System.Drawing.Size(77, 24);
             this.lbl_player5.TabIndex = 17;
             this.lbl_player5.Text = "Player 5";
             // 
@@ -260,115 +254,121 @@
             // 
             this.lbl_player6.AutoSize = true;
             this.lbl_player6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player6.Location = new System.Drawing.Point(738, 460);
-            this.lbl_player6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_player6.Location = new System.Drawing.Point(492, 299);
             this.lbl_player6.Name = "lbl_player6";
-            this.lbl_player6.Size = new System.Drawing.Size(122, 33);
+            this.lbl_player6.Size = new System.Drawing.Size(77, 24);
             this.lbl_player6.TabIndex = 18;
             this.lbl_player6.Text = "Player 6";
             // 
             // btn_next1
             // 
+            this.btn_next1.BackColor = System.Drawing.Color.Maroon;
+            this.btn_next1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_next1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_next1.Location = new System.Drawing.Point(862, 111);
-            this.btn_next1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_next1.Location = new System.Drawing.Point(575, 72);
             this.btn_next1.Name = "btn_next1";
-            this.btn_next1.Size = new System.Drawing.Size(118, 52);
+            this.btn_next1.Size = new System.Drawing.Size(79, 34);
             this.btn_next1.TabIndex = 19;
             this.btn_next1.Text = "Next";
-            this.btn_next1.UseVisualStyleBackColor = true;
+            this.btn_next1.UseVisualStyleBackColor = false;
             this.btn_next1.Click += new System.EventHandler(this.btn_next1_Click);
             // 
             // btn_next2
             // 
+            this.btn_next2.BackColor = System.Drawing.Color.Maroon;
+            this.btn_next2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_next2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_next2.Location = new System.Drawing.Point(656, 195);
-            this.btn_next2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_next2.Location = new System.Drawing.Point(437, 127);
             this.btn_next2.Name = "btn_next2";
-            this.btn_next2.Size = new System.Drawing.Size(118, 49);
+            this.btn_next2.Size = new System.Drawing.Size(79, 32);
             this.btn_next2.TabIndex = 20;
             this.btn_next2.Text = "Next";
-            this.btn_next2.UseVisualStyleBackColor = true;
+            this.btn_next2.UseVisualStyleBackColor = false;
             this.btn_next2.Click += new System.EventHandler(this.btn_next2_Click);
             // 
             // btn_next3
             // 
+            this.btn_next3.BackColor = System.Drawing.Color.Maroon;
+            this.btn_next3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_next3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_next3.Location = new System.Drawing.Point(513, 280);
-            this.btn_next3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_next3.Location = new System.Drawing.Point(342, 182);
             this.btn_next3.Name = "btn_next3";
-            this.btn_next3.Size = new System.Drawing.Size(118, 58);
+            this.btn_next3.Size = new System.Drawing.Size(79, 38);
             this.btn_next3.TabIndex = 21;
             this.btn_next3.Text = "Next";
-            this.btn_next3.UseVisualStyleBackColor = true;
+            this.btn_next3.UseVisualStyleBackColor = false;
             this.btn_next3.Click += new System.EventHandler(this.btn_next3_Click);
             // 
             // btn_Submit
             // 
+            this.btn_Submit.BackColor = System.Drawing.Color.Maroon;
+            this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Submit.Location = new System.Drawing.Point(458, 551);
-            this.btn_Submit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Submit.Location = new System.Drawing.Point(305, 358);
             this.btn_Submit.Name = "btn_Submit";
-            this.btn_Submit.Size = new System.Drawing.Size(300, 46);
+            this.btn_Submit.Size = new System.Drawing.Size(200, 30);
             this.btn_Submit.TabIndex = 22;
             this.btn_Submit.Text = "Create Campaign";
-            this.btn_Submit.UseVisualStyleBackColor = true;
+            this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
             // btn_goBack1
             // 
+            this.btn_goBack1.BackColor = System.Drawing.Color.Maroon;
+            this.btn_goBack1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_goBack1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_goBack1.Location = new System.Drawing.Point(807, 194);
-            this.btn_goBack1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_goBack1.Location = new System.Drawing.Point(538, 126);
             this.btn_goBack1.Name = "btn_goBack1";
-            this.btn_goBack1.Size = new System.Drawing.Size(159, 52);
+            this.btn_goBack1.Size = new System.Drawing.Size(106, 34);
             this.btn_goBack1.TabIndex = 23;
             this.btn_goBack1.Text = "Go Back";
-            this.btn_goBack1.UseVisualStyleBackColor = true;
+            this.btn_goBack1.UseVisualStyleBackColor = false;
             this.btn_goBack1.Click += new System.EventHandler(this.btn_goBack1_Click);
             // 
             // btn_goBack2
             // 
+            this.btn_goBack2.BackColor = System.Drawing.Color.Maroon;
+            this.btn_goBack2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_goBack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_goBack2.Location = new System.Drawing.Point(656, 283);
-            this.btn_goBack2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_goBack2.Location = new System.Drawing.Point(437, 184);
             this.btn_goBack2.Name = "btn_goBack2";
-            this.btn_goBack2.Size = new System.Drawing.Size(159, 52);
+            this.btn_goBack2.Size = new System.Drawing.Size(106, 34);
             this.btn_goBack2.TabIndex = 24;
             this.btn_goBack2.Text = "Go Back";
-            this.btn_goBack2.UseVisualStyleBackColor = true;
+            this.btn_goBack2.UseVisualStyleBackColor = false;
             this.btn_goBack2.Click += new System.EventHandler(this.btn_goBack2_Click);
             // 
             // btn_goBack3
             // 
+            this.btn_goBack3.BackColor = System.Drawing.Color.Maroon;
+            this.btn_goBack3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_goBack3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_goBack3.Location = new System.Drawing.Point(62, 548);
-            this.btn_goBack3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_goBack3.Location = new System.Drawing.Point(41, 356);
             this.btn_goBack3.Name = "btn_goBack3";
-            this.btn_goBack3.Size = new System.Drawing.Size(159, 52);
+            this.btn_goBack3.Size = new System.Drawing.Size(106, 34);
             this.btn_goBack3.TabIndex = 25;
             this.btn_goBack3.Text = "Go Back";
-            this.btn_goBack3.UseVisualStyleBackColor = true;
+            this.btn_goBack3.UseVisualStyleBackColor = false;
             this.btn_goBack3.Click += new System.EventHandler(this.btn_goBack3_Click);
             // 
             // img_mapPreview
             // 
-            this.img_mapPreview.Location = new System.Drawing.Point(302, 254);
-            this.img_mapPreview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.img_mapPreview.Location = new System.Drawing.Point(209, 160);
             this.img_mapPreview.Name = "img_mapPreview";
-            this.img_mapPreview.Size = new System.Drawing.Size(444, 428);
+            this.img_mapPreview.Size = new System.Drawing.Size(296, 278);
             this.img_mapPreview.TabIndex = 26;
             this.img_mapPreview.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(46, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.BackColor = System.Drawing.Color.Maroon;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(31, 13);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 27;
             this.button1.Text = "Main Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // worldweaverDataSet1
@@ -378,9 +378,10 @@
             // 
             // create_campaign
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.img_mapPreview);
             this.Controls.Add(this.btn_goBack3);
@@ -409,7 +410,6 @@
             this.Controls.Add(this.txt_CampaignName);
             this.Controls.Add(this.lbl_campaignName);
             this.Controls.Add(this.lbl_title);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "create_campaign";
             this.Text = "create_campaign";
             ((System.ComponentModel.ISupportInitialize)(this.img_mapPreview)).EndInit();

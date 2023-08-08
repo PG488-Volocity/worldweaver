@@ -62,6 +62,8 @@
             // 
             // txt_tokenName
             // 
+            this.txt_tokenName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txt_tokenName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_tokenName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tokenName.Location = new System.Drawing.Point(157, 67);
             this.txt_tokenName.Name = "txt_tokenName";
@@ -70,12 +72,14 @@
             // 
             // btn_tokenNext
             // 
+            this.btn_tokenNext.BackColor = System.Drawing.Color.Maroon;
+            this.btn_tokenNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_tokenNext.Location = new System.Drawing.Point(510, 67);
             this.btn_tokenNext.Name = "btn_tokenNext";
             this.btn_tokenNext.Size = new System.Drawing.Size(75, 29);
             this.btn_tokenNext.TabIndex = 3;
             this.btn_tokenNext.Text = "NEXT";
-            this.btn_tokenNext.UseVisualStyleBackColor = true;
+            this.btn_tokenNext.UseVisualStyleBackColor = false;
             this.btn_tokenNext.Click += new System.EventHandler(this.btn_tokenNext_Click);
             // 
             // lbl_tokenFilePicker
@@ -90,12 +94,14 @@
             // 
             // btn_tokenFilePicker
             // 
+            this.btn_tokenFilePicker.BackColor = System.Drawing.Color.Maroon;
+            this.btn_tokenFilePicker.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_tokenFilePicker.Location = new System.Drawing.Point(157, 111);
             this.btn_tokenFilePicker.Name = "btn_tokenFilePicker";
             this.btn_tokenFilePicker.Size = new System.Drawing.Size(164, 35);
             this.btn_tokenFilePicker.TabIndex = 5;
             this.btn_tokenFilePicker.Text = "Browse...";
-            this.btn_tokenFilePicker.UseVisualStyleBackColor = true;
+            this.btn_tokenFilePicker.UseVisualStyleBackColor = false;
             this.btn_tokenFilePicker.Click += new System.EventHandler(this.btn_tokenFilePicker_Click);
             // 
             // img_tokenPreview
@@ -108,28 +114,33 @@
             // 
             // btn_submit
             // 
+            this.btn_submit.BackColor = System.Drawing.Color.Maroon;
+            this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_submit.Location = new System.Drawing.Point(157, 368);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(164, 52);
             this.btn_submit.TabIndex = 7;
             this.btn_submit.Text = "SUBMIT";
-            this.btn_submit.UseVisualStyleBackColor = true;
+            this.btn_submit.UseVisualStyleBackColor = false;
             this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // btn_MainMenu
             // 
+            this.btn_MainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btn_MainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_MainMenu.Location = new System.Drawing.Point(30, 13);
             this.btn_MainMenu.Name = "btn_MainMenu";
             this.btn_MainMenu.Size = new System.Drawing.Size(76, 33);
             this.btn_MainMenu.TabIndex = 8;
             this.btn_MainMenu.Text = "Main Menu";
-            this.btn_MainMenu.UseVisualStyleBackColor = true;
+            this.btn_MainMenu.UseVisualStyleBackColor = false;
             this.btn_MainMenu.Click += new System.EventHandler(this.btn_MainMenu_Click);
             // 
             // upload_token
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_MainMenu);
             this.Controls.Add(this.btn_submit);

@@ -75,6 +75,7 @@
             // 
             // cmbCampaigns
             // 
+            this.cmbCampaigns.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmbCampaigns.FormattingEnabled = true;
             this.cmbCampaigns.Location = new System.Drawing.Point(296, 45);
             this.cmbCampaigns.Name = "cmbCampaigns";
@@ -83,12 +84,14 @@
             // 
             // btnOpen
             // 
+            this.btnOpen.BackColor = System.Drawing.Color.Maroon;
+            this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOpen.Location = new System.Drawing.Point(450, 45);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.UseVisualStyleBackColor = false;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // picboxMap
@@ -265,18 +268,21 @@
             // 
             // btnMain
             // 
+            this.btnMain.BackColor = System.Drawing.Color.Maroon;
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMain.Location = new System.Drawing.Point(184, 45);
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(75, 23);
             this.btnMain.TabIndex = 23;
             this.btnMain.Text = "Main Menu";
-            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.UseVisualStyleBackColor = false;
             this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // OpenCampaignForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1370, 708);
             this.Controls.Add(this.btnMain);
             this.Controls.Add(this.picbox_NPC12);

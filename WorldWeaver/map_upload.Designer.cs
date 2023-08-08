@@ -52,6 +52,8 @@
             // 
             // txt_mapName
             // 
+            this.txt_mapName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txt_mapName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_mapName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.txt_mapName.Location = new System.Drawing.Point(183, 67);
             this.txt_mapName.Name = "txt_mapName";
@@ -60,12 +62,14 @@
             // 
             // btn_mapFilePicker
             // 
+            this.btn_mapFilePicker.BackColor = System.Drawing.Color.Maroon;
+            this.btn_mapFilePicker.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_mapFilePicker.Location = new System.Drawing.Point(211, 118);
             this.btn_mapFilePicker.Name = "btn_mapFilePicker";
             this.btn_mapFilePicker.Size = new System.Drawing.Size(150, 38);
             this.btn_mapFilePicker.TabIndex = 3;
             this.btn_mapFilePicker.Text = "Browse...";
-            this.btn_mapFilePicker.UseVisualStyleBackColor = true;
+            this.btn_mapFilePicker.UseVisualStyleBackColor = false;
             this.btn_mapFilePicker.Click += new System.EventHandler(this.btn_mapFilePicker_Click_1);
             // 
             // lbl_mapFilePicker
@@ -89,38 +93,45 @@
             // 
             // btn_submit
             // 
+            this.btn_submit.BackColor = System.Drawing.Color.Maroon;
+            this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_submit.Location = new System.Drawing.Point(211, 363);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(150, 38);
             this.btn_submit.TabIndex = 7;
             this.btn_submit.Text = "SUBMIT";
-            this.btn_submit.UseVisualStyleBackColor = true;
+            this.btn_submit.UseVisualStyleBackColor = false;
             this.btn_submit.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_mapNameOkay
             // 
+            this.btn_mapNameOkay.BackColor = System.Drawing.Color.Maroon;
+            this.btn_mapNameOkay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_mapNameOkay.Location = new System.Drawing.Point(587, 67);
             this.btn_mapNameOkay.Name = "btn_mapNameOkay";
             this.btn_mapNameOkay.Size = new System.Drawing.Size(70, 38);
             this.btn_mapNameOkay.TabIndex = 8;
             this.btn_mapNameOkay.Text = "Next";
-            this.btn_mapNameOkay.UseVisualStyleBackColor = true;
+            this.btn_mapNameOkay.UseVisualStyleBackColor = false;
             this.btn_mapNameOkay.Click += new System.EventHandler(this.btn_mapNameOkay_Click);
             // 
             // btn_navMainMenu
             // 
+            this.btn_navMainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btn_navMainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_navMainMenu.Location = new System.Drawing.Point(38, 13);
             this.btn_navMainMenu.Name = "btn_navMainMenu";
             this.btn_navMainMenu.Size = new System.Drawing.Size(75, 23);
             this.btn_navMainMenu.TabIndex = 9;
             this.btn_navMainMenu.Text = "Main Menu";
-            this.btn_navMainMenu.UseVisualStyleBackColor = true;
+            this.btn_navMainMenu.UseVisualStyleBackColor = false;
             this.btn_navMainMenu.Click += new System.EventHandler(this.btn_navMainMenu_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_navMainMenu);
             this.Controls.Add(this.btn_mapNameOkay);
@@ -131,7 +142,7 @@
             this.Controls.Add(this.txt_mapName);
             this.Controls.Add(this.lbl_mapName);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Map";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.img_uploadPreview)).EndInit();
             this.ResumeLayout(false);

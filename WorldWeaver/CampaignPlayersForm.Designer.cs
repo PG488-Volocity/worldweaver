@@ -43,6 +43,8 @@
             // 
             // cmbCampaigns
             // 
+            this.cmbCampaigns.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmbCampaigns.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbCampaigns.FormattingEnabled = true;
             this.cmbCampaigns.Location = new System.Drawing.Point(186, 52);
             this.cmbCampaigns.Name = "cmbCampaigns";
@@ -61,6 +63,7 @@
             // 
             // listViewPlayers
             // 
+            this.listViewPlayers.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.listViewPlayers.HideSelection = false;
             this.listViewPlayers.Location = new System.Drawing.Point(56, 131);
             this.listViewPlayers.Name = "listViewPlayers";
@@ -70,16 +73,19 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Maroon;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(346, 52);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 21);
             this.button1.TabIndex = 4;
             this.button1.Text = "Load Players";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listViewNPCs
             // 
+            this.listViewNPCs.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.listViewNPCs.HideSelection = false;
             this.listViewNPCs.Location = new System.Drawing.Point(56, 337);
             this.listViewNPCs.Name = "listViewNPCs";
@@ -101,18 +107,21 @@
             // 
             // btnMain
             // 
+            this.btnMain.BackColor = System.Drawing.Color.Maroon;
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMain.Location = new System.Drawing.Point(56, 52);
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(75, 23);
+            this.btnMain.Size = new System.Drawing.Size(75, 21);
             this.btnMain.TabIndex = 7;
             this.btnMain.Text = "Main Menu";
-            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.UseVisualStyleBackColor = false;
             this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // CampaignPlayersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(746, 582);
             this.Controls.Add(this.btnMain);
             this.Controls.Add(this.mnmenuBtn);
@@ -120,6 +129,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listViewPlayers);
             this.Controls.Add(this.cmbCampaigns);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "CampaignPlayersForm";
             this.Text = "CampaignPlayersForm";
             this.Load += new System.EventHandler(this.CampaignPlayersForm_Load_1);

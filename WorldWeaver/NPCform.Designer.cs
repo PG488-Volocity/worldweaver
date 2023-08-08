@@ -34,6 +34,9 @@ namespace WorldWeaver
             this.label2 = new System.Windows.Forms.Label();
             this.btnSaveNPC = new System.Windows.Forms.Button();
             this.groupBoxStats = new System.Windows.Forms.GroupBox();
+            this.btn_tokennav = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
             this.txtbxRace = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.npcnameBox = new System.Windows.Forms.TextBox();
@@ -61,14 +64,13 @@ namespace WorldWeaver
             this.rtbxCharacterNotes = new System.Windows.Forms.RichTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnMain = new System.Windows.Forms.Button();
-            this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btn_tokennav = new System.Windows.Forms.Button();
             this.groupBoxStats.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtbxSTR
             // 
+            this.txtbxSTR.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtbxSTR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxSTR.Location = new System.Drawing.Point(80, 72);
             this.txtbxSTR.Name = "txtbxSTR";
             this.txtbxSTR.Size = new System.Drawing.Size(27, 20);
@@ -97,12 +99,14 @@ namespace WorldWeaver
             // 
             // btnSaveNPC
             // 
+            this.btnSaveNPC.BackColor = System.Drawing.Color.Maroon;
+            this.btnSaveNPC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSaveNPC.Location = new System.Drawing.Point(112, 607);
             this.btnSaveNPC.Name = "btnSaveNPC";
             this.btnSaveNPC.Size = new System.Drawing.Size(162, 23);
             this.btnSaveNPC.TabIndex = 6;
             this.btnSaveNPC.Text = "Save";
-            this.btnSaveNPC.UseVisualStyleBackColor = true;
+            this.btnSaveNPC.UseVisualStyleBackColor = false;
             this.btnSaveNPC.Click += new System.EventHandler(this.btnSaveNPC_Click);
             // 
             // groupBoxStats
@@ -138,8 +142,40 @@ namespace WorldWeaver
             this.groupBoxStats.Text = "NPC Stats";
             this.groupBoxStats.Enter += new System.EventHandler(this.groupBoxStats_Enter);
             // 
+            // btn_tokennav
+            // 
+            this.btn_tokennav.BackColor = System.Drawing.Color.Maroon;
+            this.btn_tokennav.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_tokennav.Location = new System.Drawing.Point(72, 217);
+            this.btn_tokennav.Name = "btn_tokennav";
+            this.btn_tokennav.Size = new System.Drawing.Size(117, 28);
+            this.btn_tokennav.TabIndex = 40;
+            this.btn_tokennav.Text = "Create New Token";
+            this.btn_tokennav.UseVisualStyleBackColor = false;
+            this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(28, 193);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Token";
+            // 
+            // cmb_tokenSelect
+            // 
+            this.cmb_tokenSelect.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmb_tokenSelect.FormattingEnabled = true;
+            this.cmb_tokenSelect.Location = new System.Drawing.Point(72, 190);
+            this.cmb_tokenSelect.Name = "cmb_tokenSelect";
+            this.cmb_tokenSelect.Size = new System.Drawing.Size(134, 21);
+            this.cmb_tokenSelect.TabIndex = 19;
+            // 
             // txtbxRace
             // 
+            this.txtbxRace.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtbxRace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxRace.Location = new System.Drawing.Point(72, 40);
             this.txtbxRace.Name = "txtbxRace";
             this.txtbxRace.Size = new System.Drawing.Size(62, 20);
@@ -156,6 +192,8 @@ namespace WorldWeaver
             // 
             // npcnameBox
             // 
+            this.npcnameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.npcnameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.npcnameBox.Location = new System.Drawing.Point(72, 14);
             this.npcnameBox.Name = "npcnameBox";
             this.npcnameBox.Size = new System.Drawing.Size(62, 20);
@@ -172,6 +210,8 @@ namespace WorldWeaver
             // 
             // textBxAC
             // 
+            this.textBxAC.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBxAC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBxAC.Location = new System.Drawing.Point(179, 160);
             this.textBxAC.Name = "textBxAC";
             this.textBxAC.Size = new System.Drawing.Size(27, 20);
@@ -189,6 +229,8 @@ namespace WorldWeaver
             // 
             // txtbxHP
             // 
+            this.txtbxHP.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtbxHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxHP.Location = new System.Drawing.Point(80, 160);
             this.txtbxHP.Name = "txtbxHP";
             this.txtbxHP.Size = new System.Drawing.Size(27, 20);
@@ -216,6 +258,8 @@ namespace WorldWeaver
             // 
             // textBxDEX
             // 
+            this.textBxDEX.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBxDEX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBxDEX.Location = new System.Drawing.Point(179, 130);
             this.textBxDEX.Name = "textBxDEX";
             this.textBxDEX.Size = new System.Drawing.Size(27, 20);
@@ -234,6 +278,8 @@ namespace WorldWeaver
             // 
             // txtbxCON
             // 
+            this.txtbxCON.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtbxCON.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxCON.Location = new System.Drawing.Point(80, 133);
             this.txtbxCON.Name = "txtbxCON";
             this.txtbxCON.Size = new System.Drawing.Size(27, 20);
@@ -260,6 +306,8 @@ namespace WorldWeaver
             // 
             // txtBxWIS
             // 
+            this.txtBxWIS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtBxWIS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBxWIS.Location = new System.Drawing.Point(179, 101);
             this.txtBxWIS.Name = "txtBxWIS";
             this.txtBxWIS.Size = new System.Drawing.Size(27, 20);
@@ -268,6 +316,8 @@ namespace WorldWeaver
             // 
             // txtbxCHA
             // 
+            this.txtbxCHA.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtbxCHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxCHA.Location = new System.Drawing.Point(80, 101);
             this.txtbxCHA.Name = "txtbxCHA";
             this.txtbxCHA.Size = new System.Drawing.Size(27, 20);
@@ -276,6 +326,8 @@ namespace WorldWeaver
             // 
             // txtbxINT
             // 
+            this.txtbxINT.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtbxINT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbxINT.Location = new System.Drawing.Point(179, 71);
             this.txtbxINT.Name = "txtbxINT";
             this.txtbxINT.Size = new System.Drawing.Size(27, 20);
@@ -321,6 +373,7 @@ namespace WorldWeaver
             // 
             // rtbxSkills
             // 
+            this.rtbxSkills.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.rtbxSkills.Location = new System.Drawing.Point(305, 378);
             this.rtbxSkills.Name = "rtbxSkills";
             this.rtbxSkills.Size = new System.Drawing.Size(202, 223);
@@ -329,6 +382,7 @@ namespace WorldWeaver
             // 
             // rtbxAbilities
             // 
+            this.rtbxAbilities.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.rtbxAbilities.Location = new System.Drawing.Point(10, 365);
             this.rtbxAbilities.Name = "rtbxAbilities";
             this.rtbxAbilities.Size = new System.Drawing.Size(288, 102);
@@ -337,6 +391,7 @@ namespace WorldWeaver
             // 
             // rtbxAttacks
             // 
+            this.rtbxAttacks.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.rtbxAttacks.Location = new System.Drawing.Point(10, 486);
             this.rtbxAttacks.Name = "rtbxAttacks";
             this.rtbxAttacks.Size = new System.Drawing.Size(288, 102);
@@ -345,6 +400,7 @@ namespace WorldWeaver
             // 
             // rtbxCharacterNotes
             // 
+            this.rtbxCharacterNotes.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.rtbxCharacterNotes.Location = new System.Drawing.Point(305, 66);
             this.rtbxCharacterNotes.Name = "rtbxCharacterNotes";
             this.rtbxCharacterNotes.Size = new System.Drawing.Size(202, 288);
@@ -364,45 +420,21 @@ namespace WorldWeaver
             // 
             // btnMain
             // 
+            this.btnMain.BackColor = System.Drawing.Color.Maroon;
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMain.Location = new System.Drawing.Point(358, 607);
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(75, 23);
             this.btnMain.TabIndex = 18;
             this.btnMain.Text = "Main Menu";
-            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.UseVisualStyleBackColor = false;
             this.btnMain.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cmb_tokenSelect
-            // 
-            this.cmb_tokenSelect.FormattingEnabled = true;
-            this.cmb_tokenSelect.Location = new System.Drawing.Point(72, 190);
-            this.cmb_tokenSelect.Name = "cmb_tokenSelect";
-            this.cmb_tokenSelect.Size = new System.Drawing.Size(134, 21);
-            this.cmb_tokenSelect.TabIndex = 19;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(28, 193);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Token";
-            // 
-            // btn_tokennav
-            // 
-            this.btn_tokennav.Location = new System.Drawing.Point(72, 217);
-            this.btn_tokennav.Name = "btn_tokennav";
-            this.btn_tokennav.Size = new System.Drawing.Size(117, 28);
-            this.btn_tokennav.TabIndex = 40;
-            this.btn_tokennav.Text = "Create New Token";
-            this.btn_tokennav.UseVisualStyleBackColor = true;
-            this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
             // 
             // NPCForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(568, 656);
             this.Controls.Add(this.btnMain);
             this.Controls.Add(this.label14);
