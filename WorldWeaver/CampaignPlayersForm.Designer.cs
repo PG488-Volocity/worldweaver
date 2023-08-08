@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CampaignPlayersForm));
             this.cmbCampaigns = new System.Windows.Forms.ComboBox();
             this.worldweaverDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.worldweaverDataSet = new WorldWeaver.worldweaverDataSet();
@@ -130,8 +131,9 @@
             this.Controls.Add(this.listViewPlayers);
             this.Controls.Add(this.cmbCampaigns);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CampaignPlayersForm";
-            this.Text = "CampaignPlayersForm";
+            this.Text = "Campaign Players Form";
             this.Load += new System.EventHandler(this.CampaignPlayersForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).EndInit();

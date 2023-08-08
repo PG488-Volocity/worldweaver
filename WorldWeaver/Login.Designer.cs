@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.usrnmLabel = new System.Windows.Forms.Label();
             this.passLabel = new System.Windows.Forms.Label();
             this.passtxtBox = new System.Windows.Forms.TextBox();
@@ -117,6 +118,7 @@
             this.Controls.Add(this.passtxtBox);
             this.Controls.Add(this.passLabel);
             this.Controls.Add(this.usrnmLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.Text = "Login";

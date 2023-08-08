@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(choose_campaign));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.campaignsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -55,7 +56,7 @@
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.campaignsBindingSource, "campaign_id", true));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(219, 144);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(133, 21);
             this.comboBox1.TabIndex = 2;
@@ -80,7 +81,7 @@
             this.nxtBtn.BackColor = System.Drawing.Color.Maroon;
             this.nxtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nxtBtn.Location = new System.Drawing.Point(385, 289);
-            this.nxtBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nxtBtn.Margin = new System.Windows.Forms.Padding(2);
             this.nxtBtn.Name = "nxtBtn";
             this.nxtBtn.Size = new System.Drawing.Size(97, 27);
             this.nxtBtn.TabIndex = 3;
@@ -97,9 +98,10 @@
             this.Controls.Add(this.nxtBtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "choose_campaign";
-            this.Text = "choose_campaign";
+            this.Text = "Campaign Select";
             this.Load += new System.EventHandler(this.choose_campaign_Load);
             ((System.ComponentModel.ISupportInitialize)(this.campaignsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet)).EndInit();

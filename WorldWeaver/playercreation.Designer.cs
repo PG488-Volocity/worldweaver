@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(playercreation));
             this.pname = new System.Windows.Forms.Label();
             this.raceLa = new System.Windows.Forms.Label();
             this.levelL = new System.Windows.Forms.Label();
@@ -527,9 +528,10 @@
             this.Controls.Add(this.levelL);
             this.Controls.Add(this.raceLa);
             this.Controls.Add(this.pname);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "playercreation";
-            this.Text = "playercreation";
+            this.Text = "Player Creation";
             this.Load += new System.EventHandler(this.playercreation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

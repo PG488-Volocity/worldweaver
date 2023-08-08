@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(upload_token));
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_tokenName = new System.Windows.Forms.Label();
             this.txt_tokenName = new System.Windows.Forms.TextBox();
@@ -151,6 +152,7 @@
             this.Controls.Add(this.txt_tokenName);
             this.Controls.Add(this.lbl_tokenName);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "upload_token";
             this.Text = "upload_token";
             this.Load += new System.EventHandler(this.upload_token_Load);

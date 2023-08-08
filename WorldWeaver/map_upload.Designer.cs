@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_mapName = new System.Windows.Forms.Label();
             this.txt_mapName = new System.Windows.Forms.TextBox();
             this.btn_mapFilePicker = new System.Windows.Forms.Button();
@@ -141,6 +142,7 @@
             this.Controls.Add(this.lbl_mapFilePicker);
             this.Controls.Add(this.txt_mapName);
             this.Controls.Add(this.lbl_mapName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Map";
             this.Load += new System.EventHandler(this.Form1_Load);

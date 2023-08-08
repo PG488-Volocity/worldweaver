@@ -29,6 +29,7 @@ namespace WorldWeaver
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RolesForm));
             this.butDM = new System.Windows.Forms.Button();
             this.BtlPlayer = new System.Windows.Forms.Button();
             this.lblslect = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@ namespace WorldWeaver
             // 
             // BtlPlayer
             // 
+            this.BtlPlayer.AutoSize = true;
             this.BtlPlayer.BackColor = System.Drawing.Color.Maroon;
             this.BtlPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtlPlayer.Location = new System.Drawing.Point(160, 84);
@@ -77,6 +79,7 @@ namespace WorldWeaver
             this.Controls.Add(this.lblslect);
             this.Controls.Add(this.BtlPlayer);
             this.Controls.Add(this.butDM);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RolesForm";
             this.Text = "Roles";
             this.Load += new System.EventHandler(this.RolesForm_Load);

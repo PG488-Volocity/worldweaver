@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OpenCampaignForm));
             this.cmbCampaigns = new System.Windows.Forms.ComboBox();
             this.btnOpen = new System.Windows.Forms.Button();
             this.picboxMap = new System.Windows.Forms.PictureBox();
@@ -308,8 +309,9 @@
             this.Controls.Add(this.picboxMap);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.cmbCampaigns);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OpenCampaignForm";
-            this.Text = "OpenCampaignForm";
+            this.Text = " Campaign ";
             this.Load += new System.EventHandler(this.OpenCampaignForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxMap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxPlayer1)).EndInit();

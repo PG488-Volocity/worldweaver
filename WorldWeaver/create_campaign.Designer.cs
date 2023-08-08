@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(create_campaign));
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_campaignName = new System.Windows.Forms.Label();
             this.txt_CampaignName = new System.Windows.Forms.TextBox();
@@ -410,8 +411,9 @@
             this.Controls.Add(this.txt_CampaignName);
             this.Controls.Add(this.lbl_campaignName);
             this.Controls.Add(this.lbl_title);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "create_campaign";
-            this.Text = "create_campaign";
+            this.Text = "Create Campaign";
             ((System.ComponentModel.ISupportInitialize)(this.img_mapPreview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldweaverDataSet1)).EndInit();
             this.ResumeLayout(false);
