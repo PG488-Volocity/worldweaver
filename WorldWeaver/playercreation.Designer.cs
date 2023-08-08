@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(playercreation));
             this.pname = new System.Windows.Forms.Label();
             this.raceLa = new System.Windows.Forms.Label();
             this.levelL = new System.Windows.Forms.Label();
@@ -65,6 +66,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_tokenSelect = new System.Windows.Forms.ComboBox();
             this.btn_tokennav = new System.Windows.Forms.Button();
+            this.btnMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pname
@@ -239,6 +241,8 @@
             // 
             // raceBox
             // 
+            this.raceBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.raceBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.raceBox.Location = new System.Drawing.Point(37, 192);
             this.raceBox.Margin = new System.Windows.Forms.Padding(2);
             this.raceBox.Name = "raceBox";
@@ -248,6 +252,8 @@
             // 
             // lvlBox
             // 
+            this.lvlBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lvlBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lvlBox.Location = new System.Drawing.Point(37, 244);
             this.lvlBox.Margin = new System.Windows.Forms.Padding(2);
             this.lvlBox.Name = "lvlBox";
@@ -258,6 +264,8 @@
             // 
             // clsBox
             // 
+            this.clsBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.clsBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.clsBox.Location = new System.Drawing.Point(37, 307);
             this.clsBox.Margin = new System.Windows.Forms.Padding(2);
             this.clsBox.Name = "clsBox";
@@ -266,6 +274,8 @@
             // 
             // hpBox
             // 
+            this.hpBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.hpBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hpBox.Location = new System.Drawing.Point(37, 416);
             this.hpBox.Margin = new System.Windows.Forms.Padding(2);
             this.hpBox.Name = "hpBox";
@@ -276,6 +286,8 @@
             // 
             // strBox
             // 
+            this.strBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.strBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.strBox.Location = new System.Drawing.Point(37, 462);
             this.strBox.Margin = new System.Windows.Forms.Padding(2);
             this.strBox.Name = "strBox";
@@ -286,6 +298,8 @@
             // 
             // dexBox
             // 
+            this.dexBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dexBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dexBox.Location = new System.Drawing.Point(37, 508);
             this.dexBox.Margin = new System.Windows.Forms.Padding(2);
             this.dexBox.Name = "dexBox";
@@ -296,6 +310,8 @@
             // 
             // conBox
             // 
+            this.conBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.conBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conBox.Location = new System.Drawing.Point(37, 556);
             this.conBox.Margin = new System.Windows.Forms.Padding(2);
             this.conBox.Name = "conBox";
@@ -306,6 +322,8 @@
             // 
             // inteBox
             // 
+            this.inteBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.inteBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inteBox.Location = new System.Drawing.Point(37, 606);
             this.inteBox.Margin = new System.Windows.Forms.Padding(2);
             this.inteBox.Name = "inteBox";
@@ -316,6 +334,8 @@
             // 
             // wisBox
             // 
+            this.wisBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.wisBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wisBox.Location = new System.Drawing.Point(37, 650);
             this.wisBox.Margin = new System.Windows.Forms.Padding(2);
             this.wisBox.Name = "wisBox";
@@ -326,6 +346,8 @@
             // 
             // chaBox
             // 
+            this.chaBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chaBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.chaBox.Location = new System.Drawing.Point(293, 416);
             this.chaBox.Margin = new System.Windows.Forms.Padding(2);
             this.chaBox.Name = "chaBox";
@@ -336,6 +358,8 @@
             // 
             // pbBox
             // 
+            this.pbBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pbBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbBox.Location = new System.Drawing.Point(293, 483);
             this.pbBox.Margin = new System.Windows.Forms.Padding(2);
             this.pbBox.Name = "pbBox";
@@ -346,7 +370,9 @@
             // 
             // wsBox
             // 
-            this.wsBox.Location = new System.Drawing.Point(293, 550);
+            this.wsBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.wsBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.wsBox.Location = new System.Drawing.Point(293, 546);
             this.wsBox.Margin = new System.Windows.Forms.Padding(2);
             this.wsBox.Name = "wsBox";
             this.wsBox.Size = new System.Drawing.Size(68, 20);
@@ -356,6 +382,8 @@
             // 
             // initBox
             // 
+            this.initBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.initBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.initBox.Location = new System.Drawing.Point(293, 598);
             this.initBox.Margin = new System.Windows.Forms.Padding(2);
             this.initBox.Name = "initBox";
@@ -366,6 +394,8 @@
             // 
             // acBox
             // 
+            this.acBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.acBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.acBox.Location = new System.Drawing.Point(293, 650);
             this.acBox.Margin = new System.Windows.Forms.Padding(2);
             this.acBox.Name = "acBox";
@@ -376,6 +406,8 @@
             // 
             // notesBox
             // 
+            this.notesBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.notesBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.notesBox.Location = new System.Drawing.Point(293, 146);
             this.notesBox.Margin = new System.Windows.Forms.Padding(2);
             this.notesBox.Multiline = true;
@@ -385,6 +417,8 @@
             // 
             // pnameBox
             // 
+            this.pnameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pnameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnameBox.Location = new System.Drawing.Point(37, 135);
             this.pnameBox.Margin = new System.Windows.Forms.Padding(2);
             this.pnameBox.Name = "pnameBox";
@@ -394,13 +428,15 @@
             // 
             // schara
             // 
-            this.schara.Location = new System.Drawing.Point(431, 459);
+            this.schara.BackColor = System.Drawing.Color.Maroon;
+            this.schara.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.schara.Location = new System.Drawing.Point(424, 596);
             this.schara.Margin = new System.Windows.Forms.Padding(2);
             this.schara.Name = "schara";
             this.schara.Size = new System.Drawing.Size(109, 23);
             this.schara.TabIndex = 36;
             this.schara.Text = "Save Character";
-            this.schara.UseVisualStyleBackColor = true;
+            this.schara.UseVisualStyleBackColor = false;
             this.schara.Click += new System.EventHandler(this.schara_Click);
             // 
             // label1
@@ -415,6 +451,7 @@
             // 
             // cmb_tokenSelect
             // 
+            this.cmb_tokenSelect.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmb_tokenSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tokenSelect.FormattingEnabled = true;
             this.cmb_tokenSelect.Location = new System.Drawing.Point(293, 341);
@@ -424,20 +461,36 @@
             // 
             // btn_tokennav
             // 
+            this.btn_tokennav.BackColor = System.Drawing.Color.Maroon;
+            this.btn_tokennav.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_tokennav.Location = new System.Drawing.Point(515, 341);
             this.btn_tokennav.Name = "btn_tokennav";
             this.btn_tokennav.Size = new System.Drawing.Size(117, 28);
             this.btn_tokennav.TabIndex = 39;
             this.btn_tokennav.Text = "Create New Token";
-            this.btn_tokennav.UseVisualStyleBackColor = true;
+            this.btn_tokennav.UseVisualStyleBackColor = false;
             this.btn_tokennav.Click += new System.EventHandler(this.btn_tokennav_Click);
+            // 
+            // btnMain
+            // 
+            this.btnMain.BackColor = System.Drawing.Color.Maroon;
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMain.Location = new System.Drawing.Point(434, 648);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(75, 23);
+            this.btnMain.TabIndex = 40;
+            this.btnMain.Text = "Main Menu";
+            this.btnMain.UseVisualStyleBackColor = false;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // playercreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(644, 749);
+            this.Controls.Add(this.btnMain);
             this.Controls.Add(this.btn_tokennav);
             this.Controls.Add(this.cmb_tokenSelect);
             this.Controls.Add(this.label1);
@@ -475,9 +528,10 @@
             this.Controls.Add(this.levelL);
             this.Controls.Add(this.raceLa);
             this.Controls.Add(this.pname);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "playercreation";
-            this.Text = "playercreation";
+            this.Text = "Player Creation";
             this.Load += new System.EventHandler(this.playercreation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -523,5 +577,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_tokenSelect;
         private System.Windows.Forms.Button btn_tokennav;
+        private System.Windows.Forms.Button btnMain;
     }
 }

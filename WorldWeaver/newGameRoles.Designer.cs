@@ -29,6 +29,7 @@ namespace WorldWeaver
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RolesForm));
             this.butDM = new System.Windows.Forms.Button();
             this.BtlPlayer = new System.Windows.Forms.Button();
             this.lblslect = new System.Windows.Forms.Label();
@@ -36,22 +37,27 @@ namespace WorldWeaver
             // 
             // butDM
             // 
+            this.butDM.BackColor = System.Drawing.Color.Maroon;
+            this.butDM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.butDM.Location = new System.Drawing.Point(60, 84);
             this.butDM.Name = "butDM";
             this.butDM.Size = new System.Drawing.Size(81, 41);
             this.butDM.TabIndex = 0;
             this.butDM.Text = "NPC";
-            this.butDM.UseVisualStyleBackColor = true;
+            this.butDM.UseVisualStyleBackColor = false;
             this.butDM.Click += new System.EventHandler(this.butDM_Click);
             // 
             // BtlPlayer
             // 
+            this.BtlPlayer.AutoSize = true;
+            this.BtlPlayer.BackColor = System.Drawing.Color.Maroon;
+            this.BtlPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtlPlayer.Location = new System.Drawing.Point(160, 84);
             this.BtlPlayer.Name = "BtlPlayer";
             this.BtlPlayer.Size = new System.Drawing.Size(75, 41);
             this.BtlPlayer.TabIndex = 1;
             this.BtlPlayer.Text = "Player ";
-            this.BtlPlayer.UseVisualStyleBackColor = true;
+            this.BtlPlayer.UseVisualStyleBackColor = false;
             this.BtlPlayer.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblslect
@@ -68,10 +74,12 @@ namespace WorldWeaver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(294, 216);
             this.Controls.Add(this.lblslect);
             this.Controls.Add(this.BtlPlayer);
             this.Controls.Add(this.butDM);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RolesForm";
             this.Text = "Roles";
             this.Load += new System.EventHandler(this.RolesForm_Load);

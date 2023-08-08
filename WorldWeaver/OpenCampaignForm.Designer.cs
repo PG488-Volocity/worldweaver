@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OpenCampaignForm));
             this.cmbCampaigns = new System.Windows.Forms.ComboBox();
             this.btnOpen = new System.Windows.Forms.Button();
             this.picboxMap = new System.Windows.Forms.PictureBox();
@@ -51,6 +52,7 @@
             this.picbox_NPC9 = new System.Windows.Forms.PictureBox();
             this.picbox_NPC8 = new System.Windows.Forms.PictureBox();
             this.picbox_NPC7 = new System.Windows.Forms.PictureBox();
+            this.btnMain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picboxMap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxPlayer2)).BeginInit();
@@ -74,6 +76,7 @@
             // 
             // cmbCampaigns
             // 
+            this.cmbCampaigns.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmbCampaigns.FormattingEnabled = true;
             this.cmbCampaigns.Location = new System.Drawing.Point(296, 45);
             this.cmbCampaigns.Name = "cmbCampaigns";
@@ -82,17 +85,19 @@
             // 
             // btnOpen
             // 
+            this.btnOpen.BackColor = System.Drawing.Color.Maroon;
+            this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOpen.Location = new System.Drawing.Point(450, 45);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.UseVisualStyleBackColor = false;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // picboxMap
             // 
-            this.picboxMap.Location = new System.Drawing.Point(65, 98);
+            this.picboxMap.Location = new System.Drawing.Point(23, 74);
             this.picboxMap.Name = "picboxMap";
             this.picboxMap.Size = new System.Drawing.Size(867, 598);
             this.picboxMap.TabIndex = 2;
@@ -262,11 +267,25 @@
             this.picbox_NPC7.TabIndex = 17;
             this.picbox_NPC7.TabStop = false;
             // 
+            // btnMain
+            // 
+            this.btnMain.BackColor = System.Drawing.Color.Maroon;
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMain.Location = new System.Drawing.Point(184, 45);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(75, 23);
+            this.btnMain.TabIndex = 23;
+            this.btnMain.Text = "Main Menu";
+            this.btnMain.UseVisualStyleBackColor = false;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
+            // 
             // OpenCampaignForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1370, 708);
+            this.Controls.Add(this.btnMain);
             this.Controls.Add(this.picbox_NPC12);
             this.Controls.Add(this.picbox_NPC11);
             this.Controls.Add(this.picbox_NPC10);
@@ -290,8 +309,9 @@
             this.Controls.Add(this.picboxMap);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.cmbCampaigns);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OpenCampaignForm";
-            this.Text = "OpenCampaignForm";
+            this.Text = " Campaign ";
             this.Load += new System.EventHandler(this.OpenCampaignForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxMap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxPlayer1)).EndInit();
@@ -342,5 +362,6 @@
         private System.Windows.Forms.PictureBox picbox_NPC9;
         private System.Windows.Forms.PictureBox picbox_NPC8;
         private System.Windows.Forms.PictureBox picbox_NPC7;
+        private System.Windows.Forms.Button btnMain;
     }
 }
